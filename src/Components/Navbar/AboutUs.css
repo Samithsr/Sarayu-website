@@ -1,0 +1,230 @@
+.about-section {
+  width: 100%;
+  min-height: 250vh;
+  background-color: #ddd;
+}
+
+.about-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  align-items: center; /* Vertically align items */
+  justify-content: space-between; /* Add spacing between elements */
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.about-content-section {
+  width: 55%;
+  padding: 20px;
+  order: 1; /* Default order for content */
+}
+
+.aboutus-title{
+  padding-top: 5px;
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+.about-image-section {
+  width: 40%;
+  padding: 20px;
+  order: 2; /* Default order for image */
+}
+
+.about-image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.about-content h3 {
+  font-size: 20px; /* Or whatever size suits your design */
+  font-weight: bold; /* Optional: makes the font bold */
+  margin-bottom: 10px; /* Optional: adds space below the heading */
+}
+
+
+.about-container:nth-child(even) .about-content-section {
+  order: 2; /* Swap content and image for even sections */
+}
+
+.about-container:nth-child(even) .about-image-section {
+  order: 1; /* Swap content and image for even sections */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-container {
+      flex-direction: column; /* Stack items vertically */
+      padding-top: 50px;
+  }
+
+  .about-content-section,
+  .about-image-section {
+      width: 100%; /* Make elements full-width */
+      order: 0; /* Reset order for smaller screens */
+      text-align: center;
+  }
+
+  .about-content-section .about-title {
+      font-size: 19px;
+  }
+
+  .about-content-section .about-content .about-button a {
+      padding: 9px 30px;
+  }
+}
+
+
+
+@keyframes appear {
+  from {
+      opacity: 0;
+      transform: translateX(-100px);
+      
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+} 
+
+
+
+
+
+/* body{
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+} */
+
+footer{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+  background-color:black;
+  color: #fff;
+}
+
+.container{
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wrapper .footer-widget{
+  width: calc(20% - 30px);
+  margin: 0 15px 50px;
+  padding: 0 12px;
+}
+
+.wrapper .footer-widget:nth-child(1){
+  width: calc(40% - 50px);
+  margin-right: 15px;
+}
+
+.wrapper .footer-widget .logo{
+  margin-bottom: 30px;
+  vertical-align: middle;
+}
+
+.wrapper .footer-widget p{
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.wrapper .footer-widget .socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.wrapper .footer-widget .socials li{
+  list-style: none;
+}
+
+.wrapper .footer-widget .socials li a{
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  color: #fff;
+  background-color: rgba(3, 127, 243, 0.5);
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .footer-widget .socials li a:hover{
+  background-color: #037ef3;
+}
+
+.wrapper .footer-widget h6{
+  color: #fff;  
+  margin: 10px 0 35px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.wrapper .footer-widget .links li{
+  list-style: none;
+}
+
+.wrapper .footer-widget .links li a{
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 32px;
+  transition: all 0.5s ease-in-out;
+}
+
+.wrapper .footer-widget .links li a:hover{
+  color: #037ef3;
+}
+
+.copyright-wrapper{
+  padding: 20px 0;
+  border-top: 1px solid #fff;
+}
+
+.copyright-wrapper p {
+  color: #fff;
+  font-size: 14px ;
+  font-weight: 500;
+  text-align: center;
+}
+
+.copyright-wrapper p a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3S ease-out;
+}
+
+.copyright-wrapper p a:hover {
+  color: #037ef3;
+}
