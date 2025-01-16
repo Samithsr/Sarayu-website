@@ -8,6 +8,10 @@ import TeamExpertise from "../../assets/TeamExpertise.webp"
 import tools from "../../assets/tools.jpg"
 import AboutUsContent from "../CommonAboutPage/CommonAbout";
 import footer from '../../assets/footerLogo.jpg'
+import { FaHome, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { NavLink } from "react-router-dom";
+
+
 
 const AboutUs = () => {
   return (
@@ -58,35 +62,32 @@ const AboutUs = () => {
       </div>
 
 
-
       <footer>
         <div className="container">
           <div className="wrapper">
             <div className="footer-widget">
-              <a href="#">
+              <NavLink to="#" className="a">
                 <h2 className="company">Sarayu Infotech Solution Pvt.Ltd</h2>
-
-
-              </a>
+              </NavLink>
               <p className="desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magni natus commodi rem asperiores iste molestias omnis ducimus eligendi aut, ipsam voluptate maiores ipsa placeat officiis minima. In, mollitia hic.
               </p>
 
               <ul className="socials">
                 <li>
-                  <a href="#"><i className="fab fa-facebook-f"></i></a>
+                  <NavLink to="#" className="a"><i className="fab fa-facebook-f"></i></NavLink>
                 </li>
 
                 <li>
-                  <a href="#"><i className="fab fa-twitter"></i></a>
+                  <NavLink to="#" className="a"><i className="fab fa-twitter"></i></NavLink>
                 </li>
 
                 <li>
-                  <a href="#"><i className="fab fa-instagram"></i></a>
+                  <NavLink to="#" className="a"><i className="fab fa-instagram"></i></NavLink>
                 </li>
 
                 <li>
-                  <a href="#"><i className="fab fa-linkedin"></i></a>
+                  <NavLink to="#" className="a"><i className="fab fa-linkedin"></i></NavLink>
                 </li>
               </ul>
             </div>
@@ -94,43 +95,48 @@ const AboutUs = () => {
             <div className="footer-widget">
               <h6>Achievements</h6>
               <ul className="links">
-                <li><a href="#">AboutUs</a></li>
-                <li><a href="#">Catalogue</a></li>
-                <li><a href="#">Clients</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><NavLink to="#" className="a">AboutUs</NavLink></li>
+                <li><NavLink to="#" className="a">Catalogue</NavLink></li>
+                <li><NavLink to="#" className="a">Clients</NavLink></li>
+                <li><NavLink to="#" className="a">Products</NavLink></li>
+                <li><NavLink to="#" className="a">Contact</NavLink></li>
               </ul>
             </div>
 
             <div className="footer-widget">
               <h6>Products</h6>
               <ul className="links">
-                <li><a href="#">Vibration Analyzer</a></li>
-                <li><a href="#">Power Moniter</a></li>
-                <li><a href="#">Vibration Meter</a></li>
-                <li><a href="#">User Display Module</a></li>
-                <li><a href="#">Data Acquisition System</a></li>
+                <li><NavLink to="#" className="a">Vibration Analyzer</NavLink></li>
+                <li><NavLink to="#" className="a">Power Moniter</NavLink></li>
+                <li><NavLink to="#" className="a">Vibration Meter</NavLink></li>
+                <li><NavLink to="#" className="a">User Display Module</NavLink></li>
+                <li><NavLink to="#" className="a">Data Acquisition System</NavLink></li>
               </ul>
             </div>
 
             <div className="footer-widget">
               <h6>Address</h6>
               <ul className="links">
-                <li><a href="#">#177,12th 'A' Cross, 2nd Floor, 2nd
+                <li>
+                  <FaHome className="unique-footer-icons" /> #177,12th 'A' Cross, 2nd Floor, 2nd
                   Stage, West of Chord Road,
-                  Mahalakshmipuram,</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#">Faq</a></li>
-                <li><a href="#">Catelouge</a></li>
-                <li><a href="#">terms &amp; conditions</a></li>
+                  Mahalakshmipuram,
+                  Bengaluru – 560086.
+                </li>
+                <li>
+                  <FaPhoneAlt className="unique-footer-icons" /> +91-80-23597410
+                </li>
+                <li>
+                  <FaEnvelope className="unique-footer-icons" /> info@sarayuinfotech.in
+                </li>
               </ul>
             </div>
           </div>
         </div>
 
         <div className="copyright-wrapper">
-          <p>Sarayu Infotech Solution Pvt.Ltd.
-            <a href="#" target="blank">DesignTorch</a>
-
+          <p>Sarayu Infotech Solution Pvt.Ltd. @2025 All Rights Reserved.
+            <NavLink to="#" target="blank"></NavLink>
           </p>
         </div>
       </footer>

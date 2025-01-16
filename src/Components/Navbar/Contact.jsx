@@ -3,6 +3,12 @@ import "./Contact.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
+import contact from "../../assets/contact.png"
+import contactus from "../../assets/contactus.png"
+import contactrem from "../../assets/us-remove.png"
+import update from "../../assets/updcontact.png"
+
+
 const Contact = () => {
   const [Formdata, setFormdata] = useState({
     username : "",
@@ -33,10 +39,8 @@ const handleSubmit = async (e) => {
   return (
     <section className="contact">
       <div className="content">
-        <h2>Contact Us</h2>
+        <img src={contactus} alt="" />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet aut
-          omnis nisi impedit nostrum ab vel ullam.
         </p>
       </div>
 
