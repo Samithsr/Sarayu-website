@@ -63,14 +63,14 @@ const AboutUs = () => {
 
 
       <footer>
+        <NavLink to="#" className="a">
+          <h2 className="company" style={{ textAlign: "center", marginBottom: "20px" }}>Sarayu Infotech Solution Pvt.Ltd</h2>
+        </NavLink>
         <div className="container">
           <div className="wrapper">
-            <div className="footer-widget">
-              <NavLink to="#" className="a">
-                <h2 className="company">Sarayu Infotech Solution Pvt.Ltd</h2>
-              </NavLink>
+            {/* <div className="footer-widget">
               <p className="desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magni natus commodi rem asperiores iste molestias omnis ducimus eligendi aut, ipsam voluptate maiores ipsa placeat officiis minima. In, mollitia hic.
+                Sarayu Infotech Solutions Pvt. Ltd. a company floated by a team of highly experienced engineers worked in the reputed process instrumentation industries to address a cause of the Indian Electronics, Electrical, Computers, Information technology,
               </p>
 
               <ul className="socials">
@@ -90,7 +90,7 @@ const AboutUs = () => {
                   <NavLink to="#" className="a"><i className="fab fa-linkedin"></i></NavLink>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             <div className="footer-widget">
               <h6>Achievements</h6>
@@ -134,12 +134,35 @@ const AboutUs = () => {
           </div>
         </div>
 
+
+
+        <div className="mapouter">
+      <div className="gmap_canvas">
+        <iframe
+          className="gmap_iframe"
+          width="100%"
+          frameBorder="0"
+          scrolling="no"
+          marginHeight="0"
+          marginWidth="0"
+          src="https://maps.google.com/maps?width=600&amp;height=242&amp;hl=en&amp;q=sarayu info&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          title="Google Map"
+        ></iframe>
+        <a href="https://sprunkiplay.com/" target="_blank" rel="noopener noreferrer">
+          Sprunki Game
+        </a>
+      </div>
+    </div>
+
         <div className="copyright-wrapper">
           <p>Sarayu Infotech Solution Pvt.Ltd. @2025 All Rights Reserved.
             <NavLink to="#" target="blank"></NavLink>
           </p>
         </div>
+
       </footer>
+
+
 
 
     </div>

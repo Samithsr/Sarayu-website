@@ -7,7 +7,7 @@
 
 .contact {
     position: relative;
-    min-height: 90vh;
+    min-height: 80vh;
     padding: 5px 150px;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
     overflow-y: auto; /* Enable scrolling if content overflows */
 }
 .contact .content img {
-    max-width: 300px;
+    max-width: 250px;
     display: flex;
     align-items: center;
     text-align: center;

@@ -2,8 +2,7 @@
     width: 100%;
     background:#fff;
     color:black;
-    padding: 4px 0;
-    padding-left: 80px;
+    padding: 4px 30px;
     /* position: fixed; */
     top: 0;
     left: 0;
@@ -17,12 +16,21 @@
    width: 120px; 
 }
 
+.navbar_mobile_menu_icon_container{
+    display: none;
+}
+
+.navbar_desktop_view{
+    display: flex;
+    align-items: center;
+}
 
 .navbar-container > ul > .li {
     display: inline-block;
     list-style: none;
     margin: 5px 20px;
     font-size: 16px;
+    outline: none;
 }
 
 .navbar-bottom{
@@ -32,4 +40,14 @@
 
 .navbar-container h4{
     font-size: 22px;
+}
+@media (width < 1000px) {
+    .navbar_desktop_view{
+        display: none;
+    }
+    .navbar_mobile_menu_icon_container{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
 }

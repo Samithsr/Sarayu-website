@@ -1,4 +1,4 @@
-import React, {Routes, useState} from 'react';
+import React, { Routes, useState } from 'react';
 import "./Contact.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -9,30 +9,35 @@ import contactrem from "../../assets/us-remove.png"
 import update from "../../assets/updcontact.png"
 
 
+
+
+
+
+
 const Contact = () => {
   const [Formdata, setFormdata] = useState({
-    username : "",
-    email : "",
-    message : ""
+    username: "",
+    email: "",
+    message: ""
   })
 
 
   const handleChange = (e) => {
-    const  {name, value} = e.target;
-    setFormdata({...Formdata, [name] : value})
+    const { name, value } = e.target;
+    setFormdata({ ...Formdata, [name]: value })
   }
 
 
-const handleSubmit = async (e) => {
-  try {
-   const res = await axios.post("",Formdata)
-    console.log(res.data)
-  } catch (error) {
-    console.log(error.response.data.message)
+  const handleSubmit = async (e) => {
+    try {
+      const res = await axios.post("", Formdata)
+      console.log(res.data)
+    } catch (error) {
+      console.log(error.response.data.message)
+    }
+    e.preventDefault()
+    console.log(Formdata)
   }
-  e.preventDefault()
-  console.log(Formdata)
-}
 
 
 
@@ -53,11 +58,11 @@ const handleSubmit = async (e) => {
             <div className="text">
               <h3>Address</h3>
               <p>#177,12th 'A' Cross, 2nd Floor, 2nd
-                 Stage, West of Chord Road,
-                 Mahalakshmipuram,
-                 Bengaluru – 560086.
-                 Tel Fax: +91-80-23597410
-                 email: info@sarayuinfotech.in</p>
+                Stage, West of Chord Road,
+                Mahalakshmipuram,
+                Bengaluru – 560086.
+                Tel Fax: +91-80-23597410
+                email: info@sarayuinfotech.in</p>
             </div>
           </div>
 
@@ -88,7 +93,7 @@ const handleSubmit = async (e) => {
           <form onSubmit={handleSubmit}>
             <h2>Send Message</h2>
             <div className="inputBox">
-              <input type="text"  name="username" value={Formdata.username} required onChange={handleChange}/>
+              <input type="text" name="username" value={Formdata.username} required onChange={handleChange} />
               <span>Full Name</span>
             </div>
             <div className="inputBox">
