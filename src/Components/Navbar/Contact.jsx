@@ -44,8 +44,8 @@ const Contact = () => {
   return (
     <section className="contact">
       <div className="content">
-        <img src={contactus} alt="" />
-        <p>
+        {/* <img src={contactus} alt="" /> */}
+        <p> Contact Us
         </p>
       </div>
 
