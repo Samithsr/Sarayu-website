@@ -7,9 +7,9 @@
 
 .about-container {
   display: flex;
-  flex-wrap: wrap; 
-  align-items: center; 
-  justify-content: space-between; 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   width: 80%;
   margin: auto;
   padding-top: 20px;
@@ -18,25 +18,25 @@
 .about-content-section {
   width: 55%;
   padding: 20px;
-  order: 1; 
+  order: 1;
 }
 
-.aboutus-title{
-  padding-top: 5px;
-  margin-bottom: 30px;
+.aboutus-title {
+  padding-top:20px;
+  /* margin-bottom:5px; */
   font-size: 35px;
   font-weight: bold;
-    margin-top: 10px;
-    color: black;
-    font-family: 'Arial, sans-serif';
-    color: '#333';
-    font-style: 'italic';
+  margin-left: 15%;
+  color: black;
+  font-family: 'Arial, sans-serif';
+  color: '#333';
+  font-style: 'italic';
 }
 
 .about-image-section {
   width: 40%;
   padding: 20px;
-  order: 2; 
+  order: 2;
 }
 
 .about-image-section img {
@@ -45,40 +45,40 @@
 }
 
 .about-content h3 {
-  font-size: 20px; 
-  font-weight: bold; 
-  margin-bottom: 10px; 
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 
 .about-container:nth-child(even) .about-content-section {
-  order: 2; 
+  order: 2;
 }
 
 .about-container:nth-child(even) .about-image-section {
-  order: 1; 
+  order: 1;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .about-container {
-      flex-direction: column; 
-      padding-top: 50px;
+    flex-direction: column;
+    padding-top: 50px;
   }
 
   .about-content-section,
   .about-image-section {
-      width: 100%; 
-      order: 0; 
-      text-align: center;
+    width: 100%;
+    order: 0;
+    text-align: center;
   }
 
   .about-content-section .about-title {
-      font-size: 19px;
+    font-size: 19px;
   }
 
   .about-content-section .about-content .about-button a {
-      padding: 9px 30px;
+    padding: 9px 30px;
   }
 }
 
@@ -86,20 +86,22 @@
 
 @keyframes appear {
   from {
-      opacity: 0;
-      transform: translateX(-100px);
-      
+    opacity: 0;
+    transform: translateX(-100px);
+
   }
+
   to {
-      opacity: 1;
-      transform: translateX(0px);
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
+
 .block {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-} 
+}
 
 
 

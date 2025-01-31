@@ -5,9 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const CommonAbout = ({ show, title, content, imagePath }) => {
   return (
     <div className="about-content-section">
-      {show && <div className="about-title">
-        <h1 className='aboutus-title'>About Us</h1>
-      </div>}
+    
       <div className="about-content">
         <h3>{title}</h3>
         <p>{content}</p>

@@ -16,15 +16,19 @@ import { NavLink } from "react-router-dom";
 const AboutUs = () => {
   return (
     <div className="about-section">
+      <div className="about-title">
+        <h1 className='aboutus-title'>About Us</h1>
+      </div>
       <div className="about-container">
+        
+        <div className="about-image-section">
+          <img src={companyimage} alt="Company" />
+        </div>
         <AboutUsContent
           show={true}
           title="Introduction to Sarayu Infotech Solutions Pvt. Ltd."
           content="Srayu Infotech Solutions Pvt. Ltd. was established by a team of highly experienced engineers from reputed process instrumentation industries. The company aims to address the requirements of the Indian Electronics, Electrical, Computers, IT, Instrumentation, and academic engineering communities. With a vision to focus on embedded systems development, the company specializes in data acquisition and control of process parameters using state-of-the-art technology" />
 
-        <div className="about-image-section">
-          <img src={companyimage} alt="Company" />
-        </div>
       </div>
       <div className="about-container">
 
