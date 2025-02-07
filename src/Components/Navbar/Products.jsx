@@ -1,15 +1,17 @@
 import React from 'react';
 import './Products.css';
+import { path } from 'framer-motion/client';
+import { NavLink } from 'react-router-dom';
 
-const ProductCard = ({ title, description, id, bgColor }) => {
+const ProductCard = ({ title, description, id, bgColor, path }) => {
   return (
-    <div className="product-card" style={{ backgroundColor: bgColor }}>
-      <div className="product-box">
-        <div className="product-content">
+    <div className="main-product-card" style={{ backgroundColor: bgColor }}>
+      <div className="main-product-box">
+        <div className="main-product-content">
           <h2>{id}</h2>
           <h3>{title}</h3>
           <p>{description}</p>
-          <a href="#">Read More</a>
+          <NavLink to={`/products/${path}`}>Read More</NavLink>
         </div>
       </div>
     </div>
@@ -24,65 +26,75 @@ const Products = () => {
       title: 'Condition Monitoring System',
       description: 'VMS-3000 series is a continious online monitoring system suitable for condition monitoring and machinery protection.',
       bgColor: '#ebf5fc',
+      path: "ConditionMonitoringSystem"
     },
     {
       id: '02',
       title: 'Vibration and Temperature Monitoring System',
       description: 'Vibration Temperature Monitoring System is a continuous online monitoring system.',
       bgColor: '#f0f8ff',
+      path: "VibrationandTemperatureMonitoringSystem"
     },
     {
       id: '03',
       title: 'Vibration Monitor VM-8000',
       description: 'VM-8000 is a continuous online monitoring system suitable for condition monitoring and machinery protection application.',
       bgColor: '#f0f8ff',
+      path: "VibrationMonitorVM-8000"
     },
     {
       id: '04',
       title: 'Vibration Monitor VM-9620',
       description: 'VM-9620 is a two channel vibration monitoring system suitable for condition monitoring and machinery protection applications.',
       bgColor: '#e0f7fa',
+      path: "VibrationMonitorVM-9620"
     },
     {
       id: '05',
       title: 'Linear Proximity Transducer System',
       description: 'The VS-800 is eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position.',
       bgColor: '#e0f7fa',
+      path: "LinearProximityTransducerSystem"
     },
     {
       id: '06',
       title: 'Vibration Analyzer',
       description: 'Vibration Analyzer is a digital signal controller based system which is used to analyze the vibration signals.',
       bgColor: '#e0f7fa',
+      path: "VibrationAnalyzer"
     },
     {
       id: '07',
       title: 'Portable Vibration Analyzer',
       description: 'Vibration analyzer is a high performance, full-fea-tured FFT data collector, signal analyzer and balancer which allow easy condition.',
       bgColor: '#e0f7fa',
+      path: "PortableVibrationAnalyzer"
     },
     {
       id: '08',
       title: 'Power Monitor',
       description: '3-Phase Power Monitoring system is a digital signal controller based system that can be used to analyze and record the power line signal.',
       bgColor: '#e0f7fa',
+      path: "PowerMonitor"
     },
     {
       id: '09',
       title: 'Vibration Meter',
       description: 'The Portable Vibration Meter is a battery powered portable instrument designed to operate with a constant type accelerometer to make vibration.',
       bgColor: '#e0f7fa',
+      path: "VibrationMeter"
     },
     {
       id: '10',
       title: 'Automated spindle Test System',
       description: 'The Spindle test and analysis system is utilized to pre-condition of the spindles before they are installed in a machine.',
       bgColor: '#e0f7fa',
+      path: "AutomatedSpindleTestSystem"
     },
   ];
 
   return (
-    <div className="products-container">
+    <div className="main-products-container">
       {productData.map((product) => (
         <ProductCard
           key={product.id}
@@ -90,6 +102,7 @@ const Products = () => {
           title={product.title}
           description={product.description}
           bgColor={product.bgColor}
+          path={product.path}
         />
       ))}
     </div>

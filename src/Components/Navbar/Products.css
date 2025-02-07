@@ -1,5 +1,5 @@
 
-.products-container {
+.main-products-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -11,19 +11,19 @@
 }
 
 
-.products-container.wrap {
+.main-products-container.wrap {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
 
-.products-container.no-wrap {
+.main-products-container.no-wrap {
   flex-wrap: nowrap; 
   justify-content: space-around;
 }
 
 
-.product-card {
+.main-product-card {
   position: relative;
   width: 330px;
   height: 400px;
@@ -36,7 +36,7 @@
 }
 
 
-.product-card .product-box {
+.main-product-card .main-product-box {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -52,20 +52,20 @@
 }
 
 
-.product-card:hover .product-box {
+.main-product-card:hover .main-product-box {
   transform: translateY(-50px);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   background: linear-gradient(45deg, #b95ce4, #4f29cd);
 }
 
 
-.product-card .product-box .product-content {
+.main-product-card .main-product-box .main-product-content {
   padding: 20px;
   text-align: center;
 }
 
 
-.product-card .product-box .product-content h2 {
+.main-product-card .main-product-box .main-product-content h2 {
   position: absolute;
   top: -10px;
   right: 30px;
@@ -76,12 +76,12 @@
 }
 
 
-.product-card:hover .product-box .product-content h2 {
+.main-product-card:hover .main-product-box .main-product-content h2 {
   color: rgba(0, 0, 0, 0.05);
 }
 
 
-.product-card .product-box .product-content h3 {
+.main-product-card .main-product-box .main-product-content h3 {
   font-size: 1.2em;
   padding:20px 0;
   color: #777;
@@ -89,7 +89,7 @@
   transition: 0.5s;
 }
 
-.product-card .product-box .product-content p {
+.main-product-card .main-product-box .main-product-content p {
   font-size: 1em;
   font-weight: 300;
   color: #777;
@@ -98,13 +98,13 @@
 }
 
 
-.product-card:hover .product-box .product-content h3,
-.product-card:hover .product-box .product-content p {
+.main-product-card:hover .main-product-box .main-product-content h3,
+.main-product-card:hover .main-product-box .main-product-content p {
   color: #fff;
 }
 
 
-.product-card .product-box .product-content a {
+.main-product-card .main-product-box .main-product-content a {
   position: relative;
   display: inline-block;
   padding: 8px 20px;
@@ -118,13 +118,13 @@
 }
 
 
-.product-card:hover .product-box .product-content a {
+.main-product-card:hover .main-product-box .main-product-content a {
   background: #ff568f;
 }
 
 
 @media (max-width: 768px) {
-  .products-container {
+  .main-products-container {
     flex-direction: column;
     gap: 10px;
   }
