@@ -22,6 +22,7 @@
   .navbar-row {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
   }
   
   .navbar-logo-container {
@@ -142,9 +143,33 @@
     transform: scale(1.1);
   }
    
+  .mobile_menu_icon{
+    display: none;
+  }
 
 
+  .mobile_menu_drop_down{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 100%;
+    background: white;
+    display: none;
+  }
 
+  @media (width < 950px) {
+    .navbar-menu-container{
+      display: none !important;
+    }
+    .mobile_menu_icon{
+      display: block;
+    }
+    .mobile_menu_drop_down{
+      display: flex;
+    }
+  }
+  
 
 
 

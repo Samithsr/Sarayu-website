@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import navbarlogo from "../../assets/Logo-removebg-preview.png";
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+  const [navbarToggler , setNavbarToggler] = useState(false)
   return (
     <header className="navbar-header">
       <div className="navbar-row">
@@ -12,6 +13,7 @@ const Navbar = () => {
             <img className="navbar-logo" src={navbarlogo} alt="Main Logo" />
           </p>
         </div>
+        
         <div className="navbar-menu-container">
           <div className="navbar-nav-container">
             <section className="navbar-section">
@@ -85,6 +87,17 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+
+      <div className='mobile_menu_icon' onClick={()=>setNavbarToggler(!navbarToggler)}>menu</div>
+      {navbarToggler && <div className='mobile_menu_drop_down'>
+        <ul>
+          <li>dasdasd</li>
+          <li>asdasd</li>
+          <li>asdads</li>
+          <li>asdasd</li>
+          <li>asdasd</li>
+        </ul>
+      </div>}
       </div>
     </header>
   );

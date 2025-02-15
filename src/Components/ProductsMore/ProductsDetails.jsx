@@ -9,8 +9,8 @@ import Iiot from "../../Components/Image/image.png";
 const services = [
   { id: 1, title: "Vibration Monitor System", imgSrc: VibrationM, link: "#" },
   { id: 2, title: "Vibration Monitor Sensor", imgSrc: Sensor, link: "#" },
-  { id: 3, title: "Hornies", imgSrc: VibrationA, link: "#" },
-  { id: 4, title: "Automations", imgSrc: Final, link: "#" },
+  { id: 3, title: "Cable Harness", imgSrc: VibrationA, link: "#" },
+  { id: 4, title: "Customized Automation", imgSrc: Final, link: "#" },
   { id: 5, title: "IIOT", imgSrc: Iiot, link: "#" }
 ];
 
