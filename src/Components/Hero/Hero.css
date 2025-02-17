@@ -1,3 +1,4 @@
+
 /* banner section starts here */
 .main_banner_section{
     height: 65vh;
@@ -13,11 +14,11 @@
 }
 
 .main_banner_section > div{
-    width: 96%;
-    height: 90%;
+    width: 98%;
+    height: 95%;
     border-radius: 5px;
-    /* backdrop-filter: blur(3px); */
-    /* box-shadow: 0 0 4px rgba(0, 0, 0, 0.267); */
+    backdrop-filter: blur(3px); 
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.267); 
 }
 .main_banner_section_image{
     position: absolute;
@@ -59,17 +60,41 @@
 .main_banner_section_content_container{
     display: grid;
     grid-template-columns: 50% 50%;
-}
-.main_banner_section_content_container > div:first-child{
-    height: 100%;
-    display: flex;
+    
+     /* background: rgb(194, 170, 215); 
+     background: rgb(163, 163, 237);  */
 }
 .main_banner_section_content_container > div:last-child{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.main_banner_section_content_container > div:last-child > img{
+        width: 300px !important;
+        height: 290px;
+        overflow: hidden;
+        background-color: white;
+        backdrop-filter: blur(px);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+.main_banner_section_content_container > div:first-child{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0px 40px;
+    font-size: 20px;
+    font-weight: 500;
 }
+/* .product-image {
+  max-width: 100%;
+  height: auto;
+} */
+
 .main_banner_section_horizontal_line{
     height: 2px;
     width: 72vw;
