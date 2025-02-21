@@ -14,6 +14,7 @@ import update from "../../assets/updcontact.png"
 
 
 
+
 const Contact = () => {
   const [Formdata, setFormdata] = useState({
     username: "",
@@ -52,7 +53,7 @@ const Contact = () => {
       <div className="container">
         <div className="contactInfo">
           <div className="box">
-            <div className="icon">
+            <div className="contact-icon">
               <FontAwesomeIcon icon={faMapMarkerAlt} />
             </div>
             <div className="text">
@@ -67,7 +68,7 @@ const Contact = () => {
           </div>
 
           <div className="box">
-            <div className="icon">
+            <div className="contact-icon">
               <FontAwesomeIcon icon={faPhone} />
             </div>
             <div className="text">
@@ -77,7 +78,7 @@ const Contact = () => {
           </div>
 
           <div className="box">
-            <div className="icon">
+            <div className="contact-icon">
               <FontAwesomeIcon icon={faEnvelope} />
             </div>
             <div className="text">
@@ -110,7 +111,21 @@ const Contact = () => {
           </form>
         </div>
       </div>
+
+      
+      <div className='chatbot-container'>
+        <div className="chatbot-popup">
+          <div className="chat-header">
+            <div className="header-info">
+              {/* <h2 className='logo-text'>Chatbot</h2> */}
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+
+
   );
 };
 

@@ -7,6 +7,7 @@ const Footer = () => {
     <footer>
         <NavLink to="#" className="a">
           <h2 className="company" style={{ textAlign: "center", marginBottom: "10px", paddingTop: "20px" }}>Sarayu Infotech Solution Pvt.Ltd</h2>
+          <div className='footer-heading-line'></div>
         </NavLink>
         <div className="container">
           <div className="wrapper">
@@ -35,7 +36,8 @@ const Footer = () => {
             </div> */}
 
             <div className="footer-widget">
-              <h6>Achievements</h6>
+              <h6>Products</h6>
+              <div className='footer-line'></div>
               <ul className="links">
                 <li><NavLink to="#" className="a">AboutUs</NavLink></li>
                 <li><NavLink to="#" className="a">Catalogue</NavLink></li>
@@ -46,7 +48,8 @@ const Footer = () => {
             </div>
 
             <div className="footer-widget">
-              <h6>Products</h6>
+              <h6>Achievements</h6>
+              <div className='footer-line'></div>
               <ul className="links">
                 <li><NavLink to="#" className="a">Vibration Analyzer</NavLink></li>
                 <li><NavLink to="#" className="a">Power Moniter</NavLink></li>
@@ -58,6 +61,7 @@ const Footer = () => {
 
             <div className="footer-widget">
               <h6>Address</h6>
+              <div className='footer-line'></div>
               <ul className="links">
                 <li>
                   <FaHome className="unique-footer-icons" /> #177,12th 'A' Cross, 2nd Floor, 2nd

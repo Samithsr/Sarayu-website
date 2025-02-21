@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* banner section starts here */
+
 .main_banner_section{
     height: 65vh;
     width: 100%;
@@ -11,20 +12,27 @@
     align-items: center;
     position: relative;
     overflow-y: hidden;
+    /* border-top-right-radius: 70%; */
 }
+.main_banner_section_content_container{
+/* background: #0b80b6;  */
+}
+
 
 .main_banner_section > div{
     width: 98%;
     height: 95%;
     border-radius: 5px;
     backdrop-filter: blur(3px); 
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.267); 
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.267);
+     
 }
 .main_banner_section_image{
     position: absolute;
     width: 100%;
     height: 170%;
     z-index: -99999;
+    
 }
 .main_banner_section_carousel_small{
     position: absolute;
@@ -35,7 +43,8 @@
     gap: 5px;
     width: 400px !important;
     height: 60px !important;
-    background: white;
+   
+     /* background: white;  */
     padding: 4px;
 }
 .main_banner_section_carousel_small > div{
@@ -56,29 +65,38 @@
     overflow: hidden;
     scale: 1.3;
     z-index: 99999;
+    cursor: pointer;
 }
 .main_banner_section_content_container{
     display: grid;
     grid-template-columns: 50% 50%;
-    
+    text-align: center;    
      /* background: rgb(194, 170, 215); 
      background: rgb(163, 163, 237);  */
 }
+
+.main_banner_section_content_container h2 {
+    text-align: center;
+    /* margin: 20px 0; */
+    padding: 30px 0;
+    width: 100%;
+}
+
 .main_banner_section_content_container > div:last-child{
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
 }
 .main_banner_section_content_container > div:last-child > img{
         width: 300px !important;
-        height: 290px;
+        height: 350px;
         overflow: hidden;
-        background-color: white;
+        transform: translateY(-30px);
+         /* background-color: white;  */
         backdrop-filter: blur(px);
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  */
     }
 
 .main_banner_section_content_container > div:first-child{
@@ -102,7 +120,9 @@
     bottom: 65px;
     left: 0px;
     background: rgb(209, 0, 209);
-}
+}  
+
+
 /* banner section ends here */
 
 .hero {
@@ -132,6 +152,7 @@
 
 .hero_text p {
     max-width: 700px;
+    
     margin: 10px  auto 20px ;
     line-height: 1.4;
 }
@@ -203,3 +224,198 @@ position: relative;
     top: 10%;
     border-radius: 50%;
 }
+
+
+
+
+
+/* company details homepage */
+
+
+.company-container {
+    width: 100%;
+    font-weight: 500;
+    margin: auto;
+    font-family: "Arial", sans-serif;
+    color: white;
+    line-height: 1.8;
+    padding: 40px;
+    font-size: 18px;
+    text-align: justify;
+    background:white ;
+    /* background-image: url("https://media.istockphoto.com/id/1173740436/photo/modern-high-tech-authentic-robot-arm-holding-contemporary-super-computer-processor-industrial.jpg?s=2048x2048&w=is&k=20&c=SX-sZ0JlIMJXiqZ7q5DRV6MAvxa1kLXDNQlJeT3cSpc="); */
+    /* background-image: url("https://images.pexels.com/photos/3855962/pexels-photo-3855962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
+    /* background-image: url("https://images.pexels.com/photos/5462679/pexels-photo-5462679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
+    background-image: url("https://media.istockphoto.com/id/817293058/photo/cyborg-hand-working-with-cpu.jpg?s=2048x2048&w=is&k=20&c=R9VwJb-iO0LtnDeqEvMfqyQ1UbGkD6GLE6HelFi-7BM=");
+    /* background-image: url("https://wallpapercave.com/wp/wp7004552.jpg"); */
+    background-attachment: fixed;
+
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  */
+    /* border-radius: 10px; */
+}
+
+.company-header {
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.company-icon {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    
+}
+
+.company-title {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: white;
+}
+
+.sarayu_divider {
+    width: 400px !important;
+    height: 3px;
+    background-color: #007bff;
+    border: none;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.company-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: white;
+    font-family: "Open Sans", serif;
+    backdrop-filter: blur(3px); 
+}
+.sarayu-home-heading{
+    font-size: 22px;
+}
+
+.company-content strong {
+    font-weight: bold;
+    color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .company-container {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .company-title {
+        font-size: 22px;
+    }
+
+    .company-content p {
+        font-size: 14px;
+    }
+}
+
+
+  /* our mission card*/
+
+
+
+  .mission-vision-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 630px;
+    height: 320px;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.icon {
+    font-size: 80px;
+    color: #ff4500; /* Adjust color if needed */
+}
+
+
+.card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+.card_divider {
+    width: 300px;
+    height: 3px;
+    background: #007bff;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+
+.card p {
+    font-size: 16px;
+    font-family: "Open Sans", serif;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+.home-container {
+    text-align: center;
+    padding: 5px;
+    background-color: #f8f9fa;
+    background-image: url("https://media.istockphoto.com/id/2154963707/photo/artificial-intelligence-robot-control-futuristic-data-screen-ai-by-enter-command-prompt-for.jpg?s=2048x2048&w=is&k=20&c=lIa9gpsh9F8CxruEH8-yRUIC_0mOZF5ERy1SSEx_dW0=");
+    /* background-image: url("https://media.istockphoto.com/id/2137300670/photo/3d-robotic-render-automatic-monitering-data-cyber-security-auto-matic-protect-online.jpg?s=2048x2048&w=is&k=20&c=gLGZlyp-2rDh5E9fYUdBE1vDn7HhEHt-A39_uZL5FEY="); */
+    background-attachment: fixed;
+  }
+  
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0px;
+    color: white;
+  }
+  
+  .core-values-image {
+    max-width: 100%;
+    height: auto;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+    border-radius: 10px;
+  }
+
+  .core_divider{
+    width: 300px;
+    height: 3px;
+    background: #007bff;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+  
+  
+
+    

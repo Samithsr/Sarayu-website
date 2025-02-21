@@ -3,7 +3,11 @@ import './Navbar.css';
 import navbarlogo from "../../assets/Logo-removebg-preview.png";
 import { NavLink } from 'react-router-dom';
 
+
+
 const Navbar = () => {
+  const [toogle, settoogle] = useState(false)
+  
   const [navbarToggler , setNavbarToggler] = useState(false)
   return (
     <header className="navbar-header">
@@ -65,10 +69,10 @@ const Navbar = () => {
           <div className="navbar-secondary-menu">
             <div className="navbar-links-group">
               <NavLink to="/campus" className="navbar-secondary-link">
-                CAMPUS
+                INTRENSHIP
               </NavLink>
               <NavLink to="/scholarships" className="navbar-secondary-link">
-                SCHOLARSHIPS
+                FACILITIES
               </NavLink>
               <NavLink to="/tp" className="navbar-secondary-link">
                 T&P
@@ -77,13 +81,15 @@ const Navbar = () => {
                 IC3
               </NavLink>
               <NavLink to="/sports" className="navbar-secondary-link">
-                SPORTS
+                ACHIEVEMENTS
               </NavLink>
             </div>
             <div className="navbar-apply-container">
-              <NavLink to="/apply" className="navbar-apply-button">
-                APPLY NOW
+              <NavLink to="/applications" className="navbar-apply-button" onMouseEnter={() =>settoogle(false)}>
+                Applications
               </NavLink>
+              <div className='navbar-application-hover-filter'>Portable Vibration Analyzer</div>
+                <div>Portable Vibration Meter</div>
             </div>
           </div>
         </div>

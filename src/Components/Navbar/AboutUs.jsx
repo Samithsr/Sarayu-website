@@ -15,13 +15,13 @@ import { NavLink } from "react-router-dom";
 
 const AboutUs = () => {
   return (
-    <div className="about-section">
+    <div  className="about-section">
       <div className="about-title">
         <h1 className='aboutus-title'>About Us</h1>
       </div>
       <div className="about-container">
         
-        <div className="about-image-section">
+        <div data-aos="zoom-in" className="about-image-section">
           <img src={companyimage} alt="Company" className="companyimage" />
         </div>
         <AboutUsContent
@@ -32,7 +32,7 @@ const AboutUs = () => {
       </div>
       <div className="about-container">
 
-        <div className="about-image-section">
+        <div data-aos="zoom-in" className="about-image-section">
           <img src={technology} alt="Company" />
         </div>
         <AboutUsContent
@@ -44,7 +44,7 @@ const AboutUs = () => {
 
       <div className="about-container">
 
-        <div className="about-image-section">
+        <div data-aos="zoom-in" className="about-image-section">
           <img src={TeamExpertise} alt="Company" />
         </div>
         <AboutUsContent
@@ -56,7 +56,7 @@ const AboutUs = () => {
 
       <div className="about-container">
 
-        <div className="about-image-section">
+        <div data-aos="zoom-in" className="about-image-section">
           <img src={tools} alt="Company" />
         </div>
         <AboutUsContent

@@ -1,0 +1,68 @@
+
+
+.application-container{
+    display: flex;
+    height: 60vh;
+    /* background-image: url("https://img.freepik.com/premium-vector/ai-concept_73426-49.jpg?w=1380"); */
+    background-image: url("https://img.freepik.com/free-photo/automotive-assembly-line-precision-automation_91128-4349.jpg?t=st=1740121540~exp=1740125140~hmac=0f9557de6940624b811060f2a9dca341fcc4c91246bd724d9a841687fb1d65a1&w=1380");
+    background-size: cover;
+    background-clip: content-box;
+    background-position: left;
+    position: relative;
+}
+.application_contaciner_cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.616);
+}
+
+.application-header{
+  flex: 1fr 1fr;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  margin: 10px 20px;
+  gap: 30px;
+  transform: translateY(-10px);
+  color: white;
+  flex-direction: column;
+}
+
+.application-header-industry{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    width: 70%;
+    color: white !important;
+    background-color: rgba(172, 170, 170, 0.5);
+    cursor: pointer;
+}
+
+.application-arrow-icon{
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+
+.application-image-header{
+    margin: 30px;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    z-index: 9999;
+}
+.application-image-header > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(245, 244, 244, 0.56) 0px 22px 70px 4px;
+}
+.application-home-navigate:hover {
+    border-bottom: 2px solid rgb(11, 179, 212);
+}
+
+

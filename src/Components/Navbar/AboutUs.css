@@ -199,6 +199,7 @@ footer {
 .footer-widget h6 {
   color: #fff;
   margin: 10px 0 15px;
+  margin-bottom: -5px;
   font-size: 18px;
   font-weight: 600;
 }
