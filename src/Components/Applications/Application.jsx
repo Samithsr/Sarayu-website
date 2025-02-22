@@ -13,7 +13,7 @@ const Application = () => {
     <div className='application-container'>
         <section className='application_contaciner_cover'></section>
         <div className='application-header'>
-            <h1>Triveni Turbine System</h1>
+            <h1>Sarayu Infotech Solution Pvt. Ltd..</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, maxime. Dolor dolorum nesciunt eveniet aliquam error architecto aspernatur ducimus quisquam voluptas earum culpa itaque asperiores praesentium, sequi atque. Enim amet rem placeat quas sapiente distinctio veniam commodi adipisci dolores vero.</p>
             <p className='application-header-industry' onClick={applicationClick}> <span className='application-home-navigate'>HOME</span> <FaArrowRightLong className='application-arrow-icon' /> INDUSTRIES / PORTABLE VIBRATION ANALYZER </p>
             </div>

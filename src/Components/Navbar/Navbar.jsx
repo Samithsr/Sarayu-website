@@ -1,14 +1,22 @@
-import React, { useState } from 'react';
-import './Navbar.css';
+import React, { useState } from "react";
+import "./Navbar.css";
 import navbarlogo from "../../assets/Logo-removebg-preview.png";
-import { NavLink } from 'react-router-dom';
-
-
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const [toogle, settoogle] = useState(false)
-  
-  const [navbarToggler , setNavbarToggler] = useState(false)
+  const [toogle, settoogle] = useState(false);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
+  const [navbarToggler, setNavbarToggler] = useState(false);
+
+
+  const navigate = useNavigate()
+ const listOneClick =()=>{
+  navigate("/applications")
+ }
+ const listTwoClick=()=>{
+  navigate("/applications")
+ }
   return (
     <header className="navbar-header">
       <div className="navbar-row">
@@ -17,7 +25,7 @@ const Navbar = () => {
             <img className="navbar-logo" src={navbarlogo} alt="Main Logo" />
           </p>
         </div>
-        
+
         <div className="navbar-menu-container">
           <div className="navbar-nav-container">
             <section className="navbar-section">
@@ -47,12 +55,20 @@ const Navbar = () => {
                       </NavLink>
                     </li>
                     <li className="navbar-item dropdown">
-                      <NavLink className="navbar-link dropdown-toggle" to="/catalogues" role="button">
+                      <NavLink
+                        className="navbar-link dropdown-toggle"
+                        to="/catalogues"
+                        role="button"
+                      >
                         CATALOGUES
                       </NavLink>
                     </li>
                     <li className="navbar-item dropdown">
-                      <NavLink className="navbar-link dropdown-toggle" to="/clients" role="button">
+                      <NavLink
+                        className="navbar-link dropdown-toggle"
+                        to="/clients"
+                        role="button"
+                      >
                         CLIENTS
                       </NavLink>
                     </li>
@@ -84,26 +100,42 @@ const Navbar = () => {
                 ACHIEVEMENTS
               </NavLink>
             </div>
-            <div className="navbar-apply-container">
-              <NavLink to="/applications" className="navbar-apply-button" onMouseEnter={() =>settoogle(false)}>
+            <div
+              className="navbar-apply-container"
+              onMouseEnter={() => setIsDropdownVisible(true)}
+              onMouseLeave={() => setIsDropdownVisible(false)}
+            >
+              <p className="navbar-apply-button">
                 Applications
-              </NavLink>
-              <div className='navbar-application-hover-filter'>Portable Vibration Analyzer</div>
-                <div>Portable Vibration Meter</div>
+              </p>
+
+              {isDropdownVisible && (
+                <ul className="application-dropdown">
+                  <li onClick={()=>listOneClick()}>Industries / Applications Steam Turbines</li>
+                  <li onCanPlay={()=>listTwoClick()}>Industries / Portable Vibration Analyzer</li>
+                </ul>
+              )}
             </div>
           </div>
         </div>
 
-      <div className='mobile_menu_icon' onClick={()=>setNavbarToggler(!navbarToggler)}>menu</div>
-      {navbarToggler && <div className='mobile_menu_drop_down'>
-        <ul>
-          <li>dasdasd</li>
-          <li>asdasd</li>
-          <li>asdads</li>
-          <li>asdasd</li>
-          <li>asdasd</li>
-        </ul>
-      </div>}
+        <div
+          className="mobile_menu_icon"
+          onClick={() => setNavbarToggler(!navbarToggler)}
+        >
+          menu
+        </div>
+        {navbarToggler && (
+          <div className="mobile_menu_drop_down">
+            <ul>
+              <li>dasdasd</li>
+              <li>asdasd</li>
+              <li>asdads</li>
+              <li>asdasd</li>
+              <li>asdasd</li>
+            </ul>
+          </div>
+        )}
       </div>
     </header>
   );

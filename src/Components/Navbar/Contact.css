@@ -172,7 +172,7 @@
 .footer-line{
     width: 50px;
     height: 3px;
-    margin-left: -1px !important;
+    margin-left: -0px !important;
     background: #007bff;
     margin: 10px auto;
     border-radius: 5px;
