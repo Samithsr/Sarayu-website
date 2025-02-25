@@ -3,10 +3,6 @@ import "./Contact.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-import contact from "../../assets/contact.png"
-import contactus from "../../assets/contactus.png"
-import contactrem from "../../assets/us-remove.png"
-import update from "../../assets/updcontact.png"
 
 
 

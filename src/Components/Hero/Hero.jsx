@@ -7,89 +7,49 @@ import { MdVisibility } from "react-icons/md";
 import CoreValue from "../Image/newCoreValues.png"
 import SarayuHomeCloud from "../Image/SarayuHomeCloud.jpg"
 
+import Card from './Card';
+
 const Hero = () => {
   const [count,setCount] = useState(3)
   const carouselData = [
     {
       id : 1,
-      title : "Portable Vibration Analyzer / Dynamic Balancer VA221",
+      title : "Reciprocating and Turbine Engines",
       imgSize : "10%",
-       img : "https://media.istockphoto.com/id/1030262538/photo/abstract-blurred-of-workplace-or-hospital-corridor-background-concept.jpg?s=612x612&w=0&k=20&c=wLVa8rKfJIDoFqps3e5WxdvSdKKT68SP87D_XzXkat4=",
-      // img : "https://images.pexels.com/photos/257636/pexels-photo-257636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      productImg:"https://sarayuinfotech.in/images/sarayu/newproductimages/PortableVibrationAnalyzer%20.png",
+      img : "https://media.licdn.com/dms/image/v2/D5612AQHPb2AAQOwaLQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1672073000577?e=2147483647&v=beta&t=YIP5CBqDh4lyFjaRhfoAedLwyM9fbfLH3xBvJYntBHs",
       description : "Vibration analyzer is a high performance, full-featured FFT data collector, signal analyzer and balancer which allow easy condition monitoring of equipment found in many industries such as power generation, petro-chemical, pulp and paper",
     },
     {
       id : 2,
-      title : "Condition Monitoring System - VMS-3000",
+      title : "Technical Illustration of a Hydroelectric Dam Turbine",
       imgSize : "40%",
-       img : "https://media.istockphoto.com/id/1030262538/photo/abstract-blurred-of-workplace-or-hospital-corridor-background-concept.jpg?s=612x612&w=0&k=20&c=wLVa8rKfJIDoFqps3e5WxdvSdKKT68SP87D_XzXkat4=",
-      // img : "https://www.energyconnects.com/media/cc0fllba/bloomburgmedia_riadjcdwx2ps01_16-09-2022_06-20-30_637988832000000000.jpg?anchor=center&mode=crop&width=1200&height=628&rnd=133077828301500000",
-      productImg:"https://sarayuinfotech.in/images/sarayu/newproductimages/Condition-Monitoring-System-VMS-3000comp.png",
-      description : "VMS-3000 series is a continuous online monitoring system suitable for condition monitoring and machinery protection applications and is designed to fully meet the requirements of the American Petroleum Institute’s API 670 standard for such systems.."
+      img : "https://thumbs.dreamstime.com/z/detailed-technical-sketch-showcases-engineering-design-hydroelectric-dam-turbine-highlighting-intricate-components-345087609.jpg?ct=jpeg=",
+      description : "VMS-3000 series is a continuous online monitoring system suitable for condition monitoring and machinery protection applications and is designed to fully meet API 670 standards."
     },
     {
       id : 3,
-      title : "Vibration and Temperature Monitoring System - VTMS-x12x",
-       img : "https://media.istockphoto.com/id/1030262538/photo/abstract-blurred-of-workplace-or-hospital-corridor-background-concept.jpg?s=612x612&w=0&k=20&c=wLVa8rKfJIDoFqps3e5WxdvSdKKT68SP87D_XzXkat4=",
-      // img : "https://warriorexpro.com/wp-content/uploads/2021/08/IEA-Global-Energy-Review-2021.jpg",
+      title : "Gas Turbine",
+      // img : "https://img.freepik.com/premium-photo/gas-turbine-power-plant-with-gas-turbines-operation-highlighting-combustion-process_372999-25785.jpg",
+      img : "https://cdn.sanity.io/images/0vv8moc6/turbomag/942a7fd82047eb952b64923e10292391b8200db7-6144x3930.jpg?fit=crop&auto=format",
       imgSize : "25%",
-      productImg:"https://sarayuinfotech.in/images/sarayu/newproductimages/vtms.png",
       description : "Vibration Temperature Monitoring System is a continuous online monitoring system suitable for condition monitoring and machinery protection applications."
     },
     {
       id : 4,
-      title : "Vibration Monitor VM-9620",
-      imgSize : "28%",
-      img : "https://media.istockphoto.com/id/1030262538/photo/abstract-blurred-of-workplace-or-hospital-corridor-background-concept.jpg?s=612x612&w=0&k=20&c=wLVa8rKfJIDoFqps3e5WxdvSdKKT68SP87D_XzXkat4=",
-      // img : "https://keystoneindustrialservices.com/wp-content/uploads/sites/4698/2016/06/bg2.jpg",
-      productImg:"https://sarayuinfotech.in/images/sarayu/newproductimages/VM.png",
-      description : "VM-9620 is a two channel vibration monitoring system suitable for condition monitoring and machinery protection applications .The system is +24V DC operated and industry standard DIN sized Rack mountable PPE+PS enclosure."
+      title : "Steam Turbines",
+      imgSize : "40%",
+      // img : "https://plus.unsplash.com/premium_photo-1661963536116-543d5014d872?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=",
+      img : "https://plus.unsplash.com/premium_photo-1661963536116-543d5014d872?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=",
+      description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
     },
     {
       id : 5,
-      title : "Vibration Meter",
-      img : "https://media.istockphoto.com/id/1030262538/photo/abstract-blurred-of-workplace-or-hospital-corridor-background-concept.jpg?s=612x612&w=0&k=20&c=wLVa8rKfJIDoFqps3e5WxdvSdKKT68SP87D_XzXkat4=",
-      // img : "https://www.oilandgasadvancement.com/wp-content/uploads/upstream/13490/carlyle_impact_review_cepsa-1000x570.jpg",
-      // img : "https://images.pexels.com/photos/236709/pexels-photo-236709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      productImg:"https://sarayuinfotech.in/images/sarayu/vibmeter.png",
-      imgSize : "25%",
-      description : "VM8000 is a 10 Channel vibration monitoring system suitable for condition monitoring and machinery protection application.The system measures 10-channel Non-Contact /Casing vibration."
-    },
-    {
-      id : 6,
-      title : "Automated Spindle Test Sysyem",
-      imgSize : "20%",
-      img : "https://media.istockphoto.com/id/1030262538/photo/abstract-blurred-of-workplace-or-hospital-corridor-background-concept.jpg?s=612x612&w=0&k=20&c=wLVa8rKfJIDoFqps3e5WxdvSdKKT68SP87D_XzXkat4=",
-      // img : "https://reneweconomy.com.au/wp-content/uploads/2019/07/Gas-turbine-electrical-power-plant-with-twilight-optimised.jpg",
-      //  img : "https://images.pexels.com/photos/236709/pexels-photo-236709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      productImg:"https://sarayuinfotech.in/images/sarayu/newproductimages/spindle.png",
-      description : "The Spindle test and analysis system is utilized to pre-condition of the spindles before they are installed in a machine. This process is accomplished over several hours at various increased running speeds which can be selected by the end user."
-    },
-    {
-      id : 7,
-      title : "Linear Proximity Transducer System",
+      title : "Pump Compressor Turbine",
       imgSize : "40%",
-      img : "https://media.istockphoto.com/id/1030262538/photo/abstract-blurred-of-workplace-or-hospital-corridor-background-concept.jpg?s=612x612&w=0&k=20&c=wLVa8rKfJIDoFqps3e5WxdvSdKKT68SP87D_XzXkat4=",
-      // img : "https://th.bing.com/th/id/OIP.TrmUQudukg35sx4nWfuZNwHaEf?w=314&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-      //  img : "https://images.pexels.com/photos/236709/pexels-photo-236709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      productImg:"https://sarayuinfotech.in/images/sarayu/newproductimages/ProximeteSensorVS-800.png",
-      description : "The VS-800 is eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed and Phase Mark (Phase Reference) from small rotating machinery to large critical machinery such as turbines and compressors in plants."
-    },
-    
+      img : "https://www.technologyedge.biz/wp-content/uploads/2020/02/gas-turbine.jpg",
+      description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
+    }
   ]
-
-      
-
-  const coreValues = [
-    { text: "Initiative", color: "#5D3FD3" },
-    { text: "Respect", color: "#2A9D8F" },
-    { text: "Security", color: "#E63946" },
-    { text: "Trust", color: "#F4A261" },
-    { text: "Innovation", color: "#5D3FD3" },
-    { text: "Commitment", color: "#E76F51" },
-    { text: "Passion", color: "#2A9D8F" },
-  ];
 
   useEffect(()=>{
     const interval = setInterval(()=>{
@@ -103,13 +63,13 @@ const Hero = () => {
       clearInterval(interval)
     }
   },[count])
+  
   return (
     <>
     {carouselData.map((item , index)=>{
       return(
         count === item.id && <div key={item.id} className='main_banner_section'>
         <img className='main_banner_section_image' src={item.img}  />
-        {/* <section className='main_banner_section_horizontal_line'></section> */}
       <div style={{color:"black"}} className='main_banner_section_content_container'>
         <div style={{display:"flex",flexDirection:"column"}}>
         <h2 data-aos="fade-down">
@@ -118,38 +78,27 @@ const Hero = () => {
           <div data-aos="fade-up">
           {item.description}
           </div>
-          </div>
-        <div data-aos="fade-left">
-          <img style={{width: item.imgSize}} src={item.productImg} />
-          </div>   
-      </div>
-      <div className='main_banner_section_carousel_small'>
-        <div onClick={()=>setCount(1)} className={index === 0 && "main_banner_section_carousel_small_active_img"}>
-          <img  src={carouselData[0].productImg} style={{display:"flex", alignItems:"center"}} />
-        </div>
-        <div onClick={()=>setCount(2)} className={index === 1 && "main_banner_section_carousel_small_active_img"} >
-          <img src={carouselData[1].productImg}  />
-        </div>
-        <div onClick={()=>setCount(3)} className={index === 2 && "main_banner_section_carousel_small_active_img"} >
-          <img src={carouselData[2].productImg}  />
-        </div>
-        <div onClick={()=>setCount(4)} className={index === 3 && "main_banner_section_carousel_small_active_img"}>
-          <img  src={carouselData[3].productImg}  />
-        </div>
-        <div onClick={()=>setCount(5)} className={index === 4 && "main_banner_section_carousel_small_active_img"}>
-          <img  src={carouselData[4].productImg}  />
-        </div>
-        <div onClick={()=>setCount(6)} className={index === 5 && "main_banner_section_carousel_small_active_img"}>
-          <img  src={carouselData[5].productImg}  />
-        </div>
-        <div onClick={()=>setCount(7)} className={index === 6 && "main_banner_section_carousel_small_active_img"}>
-          <img  src={carouselData[6].productImg}  />
-        </div>
-        
+          </div> 
       </div>
     </div>
-      )
-    })}
+    
+  )
+})}
+   
+
+
+
+   {/* HERO CARD COMPONENET */}
+
+
+<div>
+  <Card />
+</div>
+
+
+
+
+
 
 
 
@@ -216,8 +165,6 @@ const Hero = () => {
         </p>
       </div>
     </div>
-
-
 
 
 

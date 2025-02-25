@@ -161,23 +161,6 @@
     font-size: 18px;
 }
 
-.footer-heading-line{
-    width: 200px;
-    height: 3px;
-    background: #007bff;
-    margin: 10px auto;
-    border-radius: 5px;
-}
-
-.footer-line{
-    width: 50px;
-    height: 3px;
-    margin-left: -0px !important;
-    background: #007bff;
-    margin: 10px auto;
-    border-radius: 5px;
-}
-
 
 
 @media (max-width: 991px) {

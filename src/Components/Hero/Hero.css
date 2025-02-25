@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
 
 .main_banner_section{
-    height: 65vh;
+    height: 100vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,18 +13,13 @@
     overflow-y: hidden;
     /* border-top-right-radius: 70%; */
 }
-.main_banner_section_content_container{
-/* background: #0b80b6;  */
-}
 
 
 .main_banner_section > div{
-    width: 98%;
-    height: 95%;
-    border-radius: 5px;
-    backdrop-filter: blur(3px); 
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.267);
-     
+    width: 100%;
+    height: 100%;
+    /* border-radius: 5px; */
+    background: linear-gradient(to top,black,rgba(0, 0, 0, 0.185));
 }
 .main_banner_section_image{
     position: absolute;
@@ -42,8 +37,8 @@
     gap: 5px;
     width: 400px !important;
     height: 60px !important;
-   
-     /* background: white;  */
+    
+    /* background: white;  */
     padding: 4px;
 }
 .main_banner_section_carousel_small > div{
@@ -68,35 +63,17 @@
 }
 .main_banner_section_content_container{
     display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: center;    
-     /* background: rgb(194, 170, 215); 
-     background: rgb(163, 163, 237);  */
+    /* background: rgb(194, 170, 215); 
+    background: rgb(163, 163, 237);  */
 }
 
 .main_banner_section_content_container h2 {
-    text-align: center;
+    text-align: start;
     /* margin: 20px 0; */
     padding: 30px 0;
     width: 100%;
+    color: white;
 }
-
-.main_banner_section_content_container > div:last-child{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.main_banner_section_content_container > div:last-child > img{
-        width: 300px !important;
-        height: 350px;
-        overflow: hidden;
-        transform: translateY(-30px);
-         /* background-color: white;  */
-        backdrop-filter: blur(px);
-        /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  */
-    }
 
 .main_banner_section_content_container > div:first-child{
     height: 100%;
@@ -106,13 +83,15 @@
     margin: 0px 40px;
     font-size: 20px;
     font-weight: 500;
+    width: 60vw;
+    color: white;
 }
 /* .product-image {
-  max-width: 100%;
-  height: auto;
-} */
-
-.main_banner_section_horizontal_line{
+    max-width: 100%;
+    height: auto;
+    } */
+    
+    .main_banner_section_horizontal_line{
     height: 2px;
     width: 72vw;
     position: absolute;
@@ -157,10 +136,10 @@
 }
 
 .hero_section_main_container{
-display: grid;
-grid-template-columns: 50% 50%;
-padding: 30px;
-position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 30px;
+    position: relative;
 }
 .vertical_line{
     width: 2px;
@@ -245,10 +224,15 @@ position: relative;
     /* background-image: url("https://media.istockphoto.com/id/1173740436/photo/modern-high-tech-authentic-robot-arm-holding-contemporary-super-computer-processor-industrial.jpg?s=2048x2048&w=is&k=20&c=SX-sZ0JlIMJXiqZ7q5DRV6MAvxa1kLXDNQlJeT3cSpc="); */
     /* background-image: url("https://images.pexels.com/photos/3855962/pexels-photo-3855962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
     /* background-image: url("https://images.pexels.com/photos/5462679/pexels-photo-5462679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
-    background-image: url("https://media.istockphoto.com/id/817293058/photo/cyborg-hand-working-with-cpu.jpg?s=2048x2048&w=is&k=20&c=R9VwJb-iO0LtnDeqEvMfqyQ1UbGkD6GLE6HelFi-7BM=");
+    /* background-image: url("https://media.istockphoto.com/id/817293058/photo/cyborg-hand-working-with-cpu.jpg?s=2048x2048&w=is&k=20&c=R9VwJb-iO0LtnDeqEvMfqyQ1UbGkD6GLE6HelFi-7BM="); */
+    /* background-image: url("https://thumbs.dreamstime.com/z/detailed-technical-sketch-showcases-engineering-design-hydroelectric-dam-turbine-highlighting-intricate-components-345087609.jpg?ct=jpeg"); */
+    background-image: url("https://thumbs.dreamstime.com/z/modern-turbine-designs-motion-under-rushing-water-create-dynamic-energy-modern-turbine-designs-motion-under-rushing-water-353673966.jpg?ct=jpeg");
+    /* background-image: url("https://thumbs.dreamstime.com/z/efficient-hydropower-turbine-design-flowing-water-close-up-view-efficient-hydropower-turbine-design-flowing-water-353672734.jpg?ct=jpeg"); */
+    /* background-image: url("https://thumbs.dreamstime.com/z/efficient-hydropower-turbine-design-flowing-water-close-up-view-efficient-hydropower-turbine-design-flowing-water-353672734.jpg?ct=jpeg"); */
+    
     /* background-image: url("https://wallpapercave.com/wp/wp7004552.jpg"); */
     background-attachment: fixed;
-
+    
     /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  */
     /* border-radius: 10px; */
 }
@@ -287,7 +271,7 @@ position: relative;
     font-size: 16px;
     margin-bottom: 15px;
     color: white;
-     font-family: "Open Sans", serif;
+    font-family: "Open Sans", serif;
     backdrop-filter: blur(3px); 
 }
 .sarayu-home-heading{
@@ -305,22 +289,22 @@ position: relative;
         padding: 20px;
         font-size: 16px;
     }
-
+    
     .company-title {
         font-size: 22px;
     }
-
+    
     .company-content p {
         font-size: 14px;
     }
 }
 
 
-  /* our mission card*/
+/* our mission card*/
 
 
 
-  .mission-vision-container {
+.mission-vision-container {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -391,9 +375,9 @@ position: relative;
     background-image: url("https://media.istockphoto.com/id/2154963707/photo/artificial-intelligence-robot-control-futuristic-data-screen-ai-by-enter-command-prompt-for.jpg?s=2048x2048&w=is&k=20&c=lIa9gpsh9F8CxruEH8-yRUIC_0mOZF5ERy1SSEx_dW0=");
     /* background-image: url("https://media.istockphoto.com/id/2137300670/photo/3d-robotic-render-automatic-monitering-data-cyber-security-auto-matic-protect-online.jpg?s=2048x2048&w=is&k=20&c=gLGZlyp-2rDh5E9fYUdBE1vDn7HhEHt-A39_uZL5FEY="); */
     background-attachment: fixed;
-  }
-  
-  .title {
+}
+
+.title {
     font-size: 30px;
     font-weight: bold;
     margin: 20px 0px;
@@ -401,20 +385,21 @@ position: relative;
   }
   
   .core-values-image {
-    max-width: 100%;
-    height: auto;
-    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
-    border-radius: 10px;
-  }
-
-  .core_divider{
-    width: 300px;
-    height: 3px;
-    background: #007bff;
-    margin: 10px auto;
-    border-radius: 5px;
-  }
-  
-  
+      max-width: 100%;
+      height: auto;
+      /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+      border-radius: 10px;
+    }
+    
+    .core_divider{
+        width: 300px;
+        height: 3px;
+        background: #007bff;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+    
 
     
+    
+   

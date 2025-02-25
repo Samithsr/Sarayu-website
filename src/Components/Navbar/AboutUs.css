@@ -114,199 +114,99 @@
 
 
 
-/* body{
-  margin: 0;
-  padding: 0;
-  background-color: #eeeeee;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: column;
-} */
 
-footer {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 10px 10px;
-  background-color: black;
-  color: #fff;
+
+/* footer design */
+
+
+
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
 }
 
-.container {
-  width: 100%;
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0 15px;
+.company-link {
+  text-decoration: none;
+  outline: none;
+}
+
+.company {
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* .footer-line-header-title{
+  width: 200px;
+  height: 2px;
+  margin-left: 42%;
+  background-color: #037ef3;
+} */
+.footer-heading-line, .footer-line {
+  width: 80px;
+  height: 2px;
+  background-color: #037ef3;
+  margin-bottom: 20px;
+  /* margin: 10px auto; */
 }
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .footer-widget {
-  width: calc(25% - 30px);
-  margin: 23px 20px;
-  padding: 0 12px;
+  margin: 20px;
+  text-align: left;
+  flex: 1;
+  min-width: 250px;
 }
 
-.footer-widget:nth-child(1) {
-  width: calc(30% - 30px);
-}
-
-.footer-widget .logo {
-  margin-bottom: 20px;
-}
-
-.footer-widget p {
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.footer-widget .socials {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 10px;
-}
-
-.footer-widget .socials li {
-  list-style: none;
-}
-
-.footer-widget .socials li a {
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-  color: #fff;
-  background-color: rgba(3, 127, 243, 0.5);
-  border-radius: 50%;
-  font-size: 20px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease-out;
-}
-
-.footer-widget .socials li a:hover {
-  background-color: #037ef3;
-}
-
-.footer-widget h6 {
-  color: #fff;
-  margin: 10px 0 15px;
-  margin-bottom: -5px;
+.footer-title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.footer-widget .links li {
+.links {
   list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  outline: none;
 }
 
-.footer-widget .links li a {
-  color: #fff;
-  font-size: 16px;
+.footer-link {
+  color: white;
   text-decoration: none;
-  text-transform: capitalize;
-  line-height: 28px;
-  transition: all 0.5s ease-in-out;
+  transition: 0.3s;
 }
 
-.footer-widget .links li a:hover {
+.footer-link:hover {
   color: #037ef3;
-}
-
-.copyright-wrapper {
-  padding: 20px 0;
-  border-top: 1px solid #fff;
-  text-align: center;
-}
-
-.copyright-wrapper p {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
 }
 
 .unique-footer-icons {
-  font-size: 18px;
   margin-right: 10px;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
 }
 
-.unique-footer-icons:hover {
-  color: #037ef3;
+.footer-text {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-/* Media Query for Tablets and Small Screens */
-@media screen and (max-width: 1024px) {
-  .wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-widget {
-    width: 100%;
-    margin: 0 0 20px;
-    text-align: center;
-  }
-
-  .footer-widget:nth-child(1) {
-    width: 100%;
-  }
-
-  .footer-widget .socials {
-    justify-content: center;
-  }
-
-  .footer-widget .socials li a {
-    margin: 5px;
-  }
-}
-
-/* Media Query for Mobile Screens */
-@media screen and (max-width: 600px) {
-  footer {
-    padding: 15px;
-  }
-
-  .footer-widget p,
-  .footer-widget .links li a {
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  .footer-widget h6 {
-    font-size: 16px;
-  }
-
-  .copyright-wrapper p {
-    font-size: 12px;
-  }
-}
-
-
-.mapouter {
-  position: relative;
-  text-align: right;
-  width: 100%;
-  height: 242px;
-}
-
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  width: 100%;
-  height: 242px;
+.copyright-wrapper {
+  border-top: 1px solid white;
+  padding-top: 10px;
+  margin-top: 20px;
 }
 
 .gmap_iframe {
-  height: 242px !important;
+  height: 300px !important; /* Adjust the height as needed */
 }

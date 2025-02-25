@@ -7,7 +7,6 @@ import technology from "../../assets/techonology.jpg"
 import TeamExpertise from "../../assets/TeamExpertise.webp"
 import tools from "../../assets/tools.jpg"
 import AboutUsContent from "../CommonAboutPage/CommonAbout";
-import footer from '../../assets/footerLogo.jpg'
 import { FaHome, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { NavLink } from "react-router-dom";
 
