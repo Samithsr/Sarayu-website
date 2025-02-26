@@ -6,17 +6,27 @@ import { GiArcheryTarget } from "react-icons/gi";
 import { MdVisibility } from "react-icons/md"; 
 import CoreValue from "../Image/newCoreValues.png"
 import SarayuHomeCloud from "../Image/SarayuHomeCloud.jpg"
+import spindleAuto from "../Hero/HeroCardImages/spindleAuto.webp"
+// import cablehornes from "../Hero/HeroMainPageimages/cableHor.webp"
+import cable from "../Hero/HeroMainPageimages/cable.jpg"
+import spintest from "../Hero/HeroMainPageimages/spintest.jpg"
+import iiots from "../Hero/HeroMainPageimages/iiots.jpg"
+import pumpCompressor from "../Hero/HeroMainPageimages/pump.jpg"
+import Recprocating from "../Hero/HeroMainPageimages/reprocating.jpg"
+
 
 import Card from './Card';
+import CompanyDetail from './CompanyDetail';
 
-const Hero = () => {
+const Hero = (img) => {
   const [count,setCount] = useState(3)
   const carouselData = [
     {
       id : 1,
       title : "Reciprocating and Turbine Engines",
       imgSize : "10%",
-      img : "https://media.licdn.com/dms/image/v2/D5612AQHPb2AAQOwaLQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1672073000577?e=2147483647&v=beta&t=YIP5CBqDh4lyFjaRhfoAedLwyM9fbfLH3xBvJYntBHs",
+      // img : "https://media.licdn.com/dms/image/v2/D5612AQHPb2AAQOwaLQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1672073000577?e=2147483647&v=beta&t=YIP5CBqDh4lyFjaRhfoAedLwyM9fbfLH3xBvJYntBHs",
+      img : Recprocating,
       description : "Vibration analyzer is a high performance, full-featured FFT data collector, signal analyzer and balancer which allow easy condition monitoring of equipment found in many industries such as power generation, petro-chemical, pulp and paper",
     },
     {
@@ -46,9 +56,31 @@ const Hero = () => {
       id : 5,
       title : "Pump Compressor Turbine",
       imgSize : "40%",
-      img : "https://www.technologyedge.biz/wp-content/uploads/2020/02/gas-turbine.jpg",
+      img : pumpCompressor,
+      // img : "https://www.technologyedge.biz/wp-content/uploads/2020/02/gas-turbine.jpg",
       description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
-    }
+    },
+    {
+      id : 6,
+      title : "Advanced Spindle Automation System for Precision Manufacturing",
+      imgSize : "40%",
+      img: spintest,
+      description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
+    },
+    {
+      id : 7,
+      title : "Cable Horness",
+      imgSize : "40%",
+      img: cable,
+      description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
+    },
+    {
+      id : 8,
+      title : "Advancements in IIOT: Transforming Industry 4.0",
+      imgSize : "40%",
+      img: iiots,
+      description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
+    },
   ]
 
   useEffect(()=>{
@@ -95,6 +127,10 @@ const Hero = () => {
   <Card />
 </div>
 
+      {/* hero company details */}
+<div>
+  <CompanyDetail />
+</div>
 
 
 
@@ -102,45 +138,7 @@ const Hero = () => {
 
 
 
-<section className="company-container">
-  <div className="company-header">
-    {/* <div className="company-icon">🏢</div> */}
-    <h2 className="company-title">Sarayu Infotech Solutions Pvt. Ltd.</h2>
-    <hr className="sarayu_divider" data-aos="fade-up" />
-  </div>
-
-  <div className="company-content">
-    <p data-aos="fade-up">
-      <strong className='sarayu-home-heading'>Sarayu Infotech Solutions Pvt. Ltd.</strong> (SISPL) was incorporated in 2002 by a team of 
-      experienced engineers from the Indian Institute of Science. With expertise in industrial instrumentation, 
-      we specialize in providing cutting-edge solutions for process control industries.
-    </p>
-
-    <p data-aos="fade-up">
-      SISPL has successfully designed, developed, and manufactured advanced instrumentation systems, including 
-      accelerometer-based vibration analysis, non-contact eddy current-based monitoring, and precision 
-      capacitance, pressure, and temperature measurement solutions.
-    </p>
-
-    <p data-aos="fade-up">
-      Our systems are essential for condition monitoring of various rotating machineries, such as steam turbines 
-      and heavy-duty spindles. We offer multi-channel data acquisition analyzers, ranging from 8 to 40 channels, 
-      ensuring easy maintenance and enhanced productivity.
-    </p>
-
-    <p data-aos="fade-up">
-      SISPL proudly serves esteemed clients like BARC, ISRO, Triveni Turbines, MAN Diesel, Kennametal, and many 
-      more. Additionally, we have successfully executed fully automated test beds, integrating our proprietary 
-      data acquisition systems with custom front-end software for in-depth analysis and historical data tracking.
-    </p>
-
-    <p data-aos="fade-up"> 
-      We are committed to offering total solutions for process industries, taking on specialized instrumentation 
-      design and development projects as per customer requirements.
-    </p>
-  </div>
-</section>
-
+   {/* mission vision card */}
 
   
 
@@ -166,69 +164,13 @@ const Hero = () => {
       </div>
     </div>
 
-
+             {/* core vallues */}
 
     <div  className="home-container">
       <h1 className="title">SISPL's CORE VALUES AND ETHICS</h1>
       <div className="core_divider"></div>
       <img src={CoreValue} alt="Core Values and Ethics" className="core-values-image" style={{ width: "90%", maxWidth: "1000px", height: "auto", borderRadius: "10px", }} />
     </div>
-    
-
-
-    
-
-
-
-
-
-
-
-{/* 
-    <h3 style={{textAlign:"center",fontSize:"30px",margin:"20px 0",}}>Our Products</h3>
-    <div className='hero_section_main_container'>
-      <div className='vertical_line'></div>
-          <div className='hero_sction_left_section'>
-            <h4 style={{margin:"10px 0",position:"relative", textAlign:"end", width:"100%"}}>Portable Vibration Analyzer / Dynamic Balancer VA221 <div className='left_section_dot'></div> </h4>
-            <p>Vibration analyzer is a high performance, full-featured FFT data collector, signal analyzer and balancer which allow easy condition monitoring of equipment found in many industries such as power generation, petro-chemical, pulp and paper.</p>
-          </div>
-          <div className='hero_sction_right_section'>
-            <img src="https://sarayuinfotech.in/images/sarayu/newproductimages/PortableVibrationAnalyzer%20.png" alt="" />
-          </div>
-    </div> */}
-
-
-    {/* <div className='hero_section_main_container'>
-      <div className='vertical_line'></div>
-          <div className='hero_sction_left_section'>
-            <img src="https://sarayuinfotech.in/images/sarayu/newproductimages/PortableVibrationAnalyzer%20.png" alt="" />
-          </div>
-          <div className='hero_sction_right_section'>
-            <h4 style={{margin:"10px 0",position:"relative", textAlign:"start", width:"100%"}}>Portable Vibration Analyzer / Dynamic Balancer VA221 <div className='right_section_dot'></div> </h4>
-            <p>Vibration analyzer is a high performance, full-featured FFT data collector, signal analyzer and balancer which allow easy condition monitoring of equipment found in many industries such as power generation, petro-chemical, pulp and paper.</p>
-          </div>
-    </div> */}
-
-
-    
-
-
-
-
-
-
-
-
-
-{/* 
-    <div className='hero'>
-        <div className="hero_text">
-            <h1>We ensure better perpormance for a better world</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam! Our mission is to provide the best solutions for a better tomorrow</p>
-            <button className='btn'>Expore more</button>
-        </div>
-
-    </div> */}
     </>
   )
 }

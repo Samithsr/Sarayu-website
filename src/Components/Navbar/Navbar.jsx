@@ -19,6 +19,7 @@ const Navbar = () => {
  }
   return (
     <header className="navbar-header">
+      <section className="navbar_shadow_overlay"></section>
       <div className="navbar-row">
         <div className="navbar-logo-container">
           <p className="navbar-logo-wrapper">

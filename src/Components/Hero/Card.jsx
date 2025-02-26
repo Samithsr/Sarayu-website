@@ -9,6 +9,7 @@ import twoclr from "../Hero/HeroCardImages/twoclr.jpg"
 import flow from "../Hero/HeroCardImages/flow.avif"
 import fire from "../Hero/HeroCardImages/fire.avif"
 import search from "../Hero/HeroCardImages/search.avif"
+import CommonCard from './HeroCommonCard/CommonCard'
 // import dark from "../Hero/HeroCardImages/dark.avif"
 // import white from "../Hero/HeroCardImages/white.avif"
 
@@ -16,139 +17,62 @@ import search from "../Hero/HeroCardImages/search.avif"
 const Card = () => {
   return (
     <div className='main_Container'>
-    
-
-    <div  data-aos="fade-up" className='main_card'>
-      <div className='image_container'>
-        <img src={search} alt="" />
-      </div>
-      <div className='content_header'>
-      <p>SEARCH REPORT</p>
-      <p>Technology Vision 2025</p>
-      </div>
-      <div className='overlay_description'>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!</p>
-        <div className='overlay_description_footer'>
-          <button>Expand &nbsp; <p style={{transform:"translateY(2px)"}}>&gt;</p></button>
-        </div>
-      </div>
-    </div>
-
-
-    <div  data-aos="fade-up" className='main_card'>
-      <div className='image_container'>
-        <img src={wordstar} alt="" />
-      </div>
-      <div className='content_header'>
-      <p>CASE STUDY</p>
-      <p>Advanced PCB routing techniques & interference in high-speed embedded systems</p>
-      </div>
-      <div className='overlay_description'>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!</p>
-        <div className='overlay_description_footer'>
-          <button>Expand &nbsp; <p style={{transform:"translateY(2px)"}}>&gt;</p></button>
-        </div>
-      </div>
-    </div>
-
-
-    <div  data-aos="fade-up" className='main_card'>
-      <div className='image_container'>
-        <img src={blog} alt="" />
-      </div>
-      <div className='content_header'>
-      <p>RESEARCH REPORT</p>
-      <p>Pulse of change: january 2025</p>
-      </div>
-      <div className='overlay_description'>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!</p>
-        <div className='overlay_description_footer'>
-          <button>Expand &nbsp; <p style={{transform:"translateY(2px)"}}>&gt;</p></button>
-        </div>
-      </div>
-    </div>
-
-    <div  data-aos="fade-up" className='main_card'>
-      <div className='image_container'>
-        <img src={twoclr} alt="" />
-      </div>
-      <div className='content_header'>
-      <p>CASE STUDY</p>
-      <p>Optimized low-power design for efficiency & longevity</p>
-      </div>
-      <div className='overlay_description'>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!</p>
-        <div className='overlay_description_footer'>
-          <button>Expand &nbsp; <p style={{transform:"translateY(2px)"}}>&gt;</p></button>
-        </div>
-      </div>
-    </div>
-
-    <div  data-aos="fade-up" className='main_card'>
-      <div className='image_container'>
-        <img src={starsearch} alt="" />
-      </div>
-      <div className='content_header'>
-      <p>CASE STUDY</p>
-      <p>High-density multilayer PCB with EMI shielding and thermal management for industrial-grade durability.</p>
-      </div>
-      <div className='overlay_description'>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!</p>
-        <div className='overlay_description_footer'>
-          <button>Expand &nbsp; <p style={{transform:"translateY(2px)"}}>&gt;</p></button>
-        </div>
-      </div>
-    </div>
-
-    <div  data-aos="fade-up" className='main_card'>
-      <div className='image_container'>
-        <img src={flow} alt="" />
-      </div>
-      <div className='content_header'>
-      <p>PERSPECTIVE</p>
-      <p>What's keeping hardware and platform leadres up at night?</p>
-      </div>
-      <div className='overlay_description'>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!</p>
-        <div className='overlay_description_footer'>
-          <button>Expand &nbsp; <p style={{transform:"translateY(2px)"}}>&gt;</p></button>
-        </div>
-      </div>
-    </div>
-
-    <div  data-aos="fade-up" className='main_card'>
-      <div className='image_container'>
-        <img src={fire} alt="" />
-      </div>
-      <div className='content_header'>
-      <p>RESEARCH REPORT</p>
-      <p>How private equity can optimize procurement for outsized returns</p>
-      </div>
-      <div className='overlay_description'>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!</p>
-        <div className='overlay_description_footer'>
-          <button>Expand &nbsp; <p style={{transform:"translateY(2px)"}}>&gt;</p></button>
-        </div>
-      </div>
-    </div>
-
-    
-    <div  data-aos="fade-up" className='main_card'>
-      <div className='image_container'>
-        <img src={cardstar} alt="" />
-      </div>
-      <div className='content_header'>
-      <p>BLOG</p>
-      <p>What we learned desigining a new agentic workforce in Marketing</p>
-      </div>
-      <div className='overlay_description'>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!</p>
-        <div className='overlay_description_footer'>
-          <button>Expand &nbsp; <p style={{transform:"translateY(2px)"}}>&gt;</p></button>
-        </div>
-      </div>
-    </div>
-
+    <CommonCard 
+      ImgSrc = {search}
+      title  = "SEARCH REPORT"
+      descriptiontitle = "Technology Vision 2025"
+      description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
+      moreExpand = "Expand"
+    />
+    <CommonCard 
+      ImgSrc = {wordstar}
+      title  = "CASE STUDY"
+      descriptiontitle = "Advanced PCB routing techniques & interference in high-speed embedded systems"
+      description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
+      moreExpand = "Expand"
+    />
+    <CommonCard 
+      ImgSrc = {blog}
+      title  = "RESEARCH REPORT"
+      descriptiontitle = "Pulse of change: january 2025"
+      description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
+      moreExpand = "Expand"
+    />
+    <CommonCard 
+      ImgSrc = {twoclr}
+      title  = "CASE STUDY"
+      descriptiontitle = "Optimized low-power design for efficiency & longevity"
+      description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
+      moreExpand = "Expand"
+    />
+    <CommonCard 
+      ImgSrc = {starsearch}
+      title  = "CASE STUDY"
+      descriptiontitle = "High-density multilayer PCB with EMI shielding and thermal management for industrial-grade durability"
+      description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
+      moreExpand = "Expand"
+    />
+    <CommonCard 
+      ImgSrc = {flow}
+      title  = "PERSPECTIVE"
+      descriptiontitle = "What's keeping hardware and platform leadres up at night"
+      description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
+      moreExpand = "Expand"
+    />
+    <CommonCard 
+      ImgSrc = {fire}
+      title  = "RESEARCH REPORT"
+      descriptiontitle = "How private equity can optimize procurement for outsized returns"
+      description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
+      moreExpand = "Expand"
+    />
+    <CommonCard 
+      ImgSrc = {cardstar}
+      title  = "BLOG"
+      descriptiontitle = "What we learned desigining a new agentic workforce in Marketing"
+      description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
+      moreExpand = "Expand"
+    />
   </div>
   )
 }
