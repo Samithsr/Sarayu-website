@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import "./CardMore.css";
 
+import searchgif from "../HeroCardImages/searchgif.gif"
+import newsearch from "../HeroCardImages/newsearch.webm"
+
+
 const CardMore = () => {
+    const videoRef = useRef(null)
   return (
     <div className='card-research-report'>
       {/* Header Section */}
@@ -45,8 +50,45 @@ const CardMore = () => {
       </div>
 
         {/* REAEARCH IMAGE CONTAINER */}
-      <div className='research-im'></div>
+    {/* <div className='research-image-container'> */}
+      <div className='research-left-content-container'>
+        <div className='research-header-line-container'>
+            <section className='research-active-line'></section>
+          <h2>Accelerating Autonomy with the Cognitive Digital Brain and Technology</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            laborum facere necessitatibus, similique sed doloremque praesentium
+            fugit ipsa, dolore porro recusandae, impedit quisquam perspiciatis
+            quasi error delectus non neque aliquid nesciunt qui magni odio
+            maiores? Rerum, amet! Laborum excepturi nisi, sed doloremque
+            delectus quibusdam dolorem aut in inventore amet ad facilis
+            commodi consequatur rerum nobis? Esse incidunt maiores aperiam
+            amet,  In nihil eos asperiores. Consequuntur, vero!
+          </p>
+        </div>
+        <div className='research-right-image-container'>
+          <div className='research-right-image-header-container'>
+          <video 
+  ref={videoRef} 
+  className='search-video' 
+  src={newsearch} 
+  autoPlay 
+  loop 
+  muted 
+  disablePictureInPicture
+  controlsList="nodownload nofullscreen noremoteplayback"
+  style={{ width: '600px', height: '350px' }}
+/>
+
+          {/* <img className='search-image' src={searchgif} alt='' style={{ width: '600px', height: '350px' }} /> */}
+
+            {/* <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, repellat.</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia possimus fugit deserunt facere, hic vitae ex, nesciunt quo delectus necessitatibus id quos, doloribus ullam mollitia officiis unde ad quisquam sit rem voluptatibus praesentium? Voluptas nostrum tempore laudantium libero deleniti officiis maiores commodi suscipit adipisci magnam recusandae obcaecati tempora perspiciatis provident, cumque qui corrupti blanditiis necessitatibus assumenda voluptate? Dolorem recusandae placeat id, quisquam aspernatur minus obcaecati officia cupiditate quo error explicabo?</p> */}
+          </div>
+        </div>
+      </div>
     </div>
+    // </div>
   );
 };
 

@@ -44,7 +44,7 @@ const Card = () => {
      
     />
     <CommonCard 
-      ImgSrc = {white}
+      ImgSrc = {twoclr}
       title  = "CASE STUDY"
       descriptiontitle = "Optimized low-power design for efficiency & longevity"
       description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
