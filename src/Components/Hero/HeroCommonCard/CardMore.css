@@ -5,7 +5,7 @@
     flex-direction: column;
     background: black;
     color: white;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 /* Header Section */
@@ -129,6 +129,7 @@
     max-width: 600px;
     height: auto;
     object-fit: cover;
+    cursor: pointer;
     /* border-radius: 10px;  */
     /* box-shadow: 0 0 4px rgb(171, 169, 169); */
 }
@@ -219,3 +220,22 @@
         height: auto; 
         }
 }
+
+
+
+
+
+
+/* horizantal view */
+.card-horizantal-view{
+    display: flex;
+    align-items: start;
+    background-color: red;
+    height: 80%;
+    width: 100vw;
+}
+
+.card-horizantal-heading{
+   
+    background-color: red;
+ }
