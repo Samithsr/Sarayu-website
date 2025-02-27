@@ -11,6 +11,7 @@ import Footer from './Components/common/Footer';
 import Products from './Components/Navbar/Products';
 import ChatBot from "react-chatbotify";
 import Application from './Components/Applications/Application';
+import CardMore from './Components/Hero/HeroCommonCard/CardMore';
 
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/products" element={<Products />} />
         <Route path="/applications" element={<Application />} />
+        <Route path="/cardmore/:title" element={<CardMore />} />
        </Routes>
 
        {/* Chatbot with predefined responses */}

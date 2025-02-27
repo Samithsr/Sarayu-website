@@ -13,6 +13,7 @@ import spintest from "../Hero/HeroMainPageimages/spintest.jpg"
 import iiots from "../Hero/HeroMainPageimages/iiots.jpg"
 import pumpCompressor from "../Hero/HeroMainPageimages/pump.jpg"
 import Recprocating from "../Hero/HeroMainPageimages/reprocating.jpg"
+import smartsen from "../Hero/HeroMainPageimages/smartsensor.jpg"
 
 
 import Card from './Card';
@@ -81,6 +82,13 @@ const Hero = (img) => {
       img: iiots,
       description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
     },
+    {
+      id : 9,
+      title : "Advancements in IIOT: Transforming Industry 4.0",
+      imgSize : "40%",
+      img: smartsen,
+      description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
+    },
   ]
 
   useEffect(()=>{
@@ -139,9 +147,6 @@ const Hero = (img) => {
 
 
    {/* mission vision card */}
-
-  
-
     <div className="mission-vision-container">
       {/* Mission Card */}
       <div data-aos="flip-left" className="card">
@@ -164,8 +169,9 @@ const Hero = (img) => {
       </div>
     </div>
 
-             {/* core vallues */}
 
+
+   {/* core vallues */}
     <div  className="home-container">
       <h1 className="title">SISPL's CORE VALUES AND ETHICS</h1>
       <div className="core_divider"></div>

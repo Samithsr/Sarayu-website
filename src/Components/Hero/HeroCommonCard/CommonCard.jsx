@@ -1,8 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const CommonCard = ({ ImgSrc, title, descriptiontitle, description, moreExpand }) => {
+const CommonCard = ({ ImgSrc, title, descriptiontitle, description, moreExpand,  }) => {
+
+
+
+  const navigate = useNavigate();
+  const handleCardClick = () => {
+    navigate(`/CardMore/${title}`)
+      // console.log("card clicked", title);   
+  };
+
   return (
-    <div data-aos="fade-up" className='main_card'>
+    <div data-aos="fade-up" className='main_card' onClick={handleCardClick}>
       <div className='image_container'>
         <img src={ImgSrc} alt={title} />
       </div>

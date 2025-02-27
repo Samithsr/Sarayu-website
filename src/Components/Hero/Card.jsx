@@ -10,8 +10,10 @@ import flow from "../Hero/HeroCardImages/flow.avif"
 import fire from "../Hero/HeroCardImages/fire.avif"
 import search from "../Hero/HeroCardImages/search.avif"
 import CommonCard from './HeroCommonCard/CommonCard'
-// import dark from "../Hero/HeroCardImages/dark.avif"
-// import white from "../Hero/HeroCardImages/white.avif"
+import dark from "../Hero/HeroCardImages/pcb.jpg"
+import white from "../Hero/HeroCardImages/CardRe.jpg"
+import casethree from "../Hero/HeroCardImages/casethree.jpg"
+import casetone from "../Hero/HeroCardImages/caseone.jpg"
 
 
 const Card = () => {
@@ -23,34 +25,39 @@ const Card = () => {
       descriptiontitle = "Technology Vision 2025"
       description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
       moreExpand = "Expand"
+     
     />
     <CommonCard 
-      ImgSrc = {wordstar}
+      ImgSrc = {dark}
       title  = "CASE STUDY"
       descriptiontitle = "Advanced PCB routing techniques & interference in high-speed embedded systems"
       description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
       moreExpand = "Expand"
+     
     />
     <CommonCard 
-      ImgSrc = {blog}
+      ImgSrc = {wordstar}
       title  = "RESEARCH REPORT"
       descriptiontitle = "Pulse of change: january 2025"
       description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
       moreExpand = "Expand"
+     
     />
     <CommonCard 
-      ImgSrc = {twoclr}
+      ImgSrc = {white}
       title  = "CASE STUDY"
       descriptiontitle = "Optimized low-power design for efficiency & longevity"
       description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
       moreExpand = "Expand"
+      
     />
     <CommonCard 
-      ImgSrc = {starsearch}
+      ImgSrc = {casethree}
       title  = "CASE STUDY"
-      descriptiontitle = "High-density multilayer PCB with EMI shielding and thermal management for industrial-grade durability"
+      descriptiontitle = "High-density PCB with EMI shielding & thermal management"
       description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
       moreExpand = "Expand"
+    
     />
     <CommonCard 
       ImgSrc = {flow}
@@ -58,6 +65,7 @@ const Card = () => {
       descriptiontitle = "What's keeping hardware and platform leadres up at night"
       description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
       moreExpand = "Expand"
+      
     />
     <CommonCard 
       ImgSrc = {fire}
@@ -65,6 +73,7 @@ const Card = () => {
       descriptiontitle = "How private equity can optimize procurement for outsized returns"
       description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
       moreExpand = "Expand"
+     
     />
     <CommonCard 
       ImgSrc = {cardstar}
@@ -72,6 +81,7 @@ const Card = () => {
       descriptiontitle = "What we learned desigining a new agentic workforce in Marketing"
       description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum quo eligendi minima iure necessitatibus earum sit molestiae vero explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!"
       moreExpand = "Expand"
+     
     />
   </div>
   )

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.card-research-report{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white; 
+}
+
+.card-research-header{
+    color: white;
+    width: 79dvw;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.card-research-header > P{
+    font-size: 17px;
+    margin-bottom: 30px;
+    font-family: "Roboto", serif;
+   
+   
+
+}
+
+.card-research-header > h1 {
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-family: "Roboto", serif;
+}
+
+.card-research-header > h4 {
+    font-size: 25px;
+    margin-bottom: 65px;
+    font-family: "Roboto", serif;
+}
+
+.card-search-date{
+    display: flex;
+    font-family: monospace; 
+    align-items: center;
+}
+
+.card-search-more-line{
+    height: 7px;
+    width: 80%;
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+    background: rgb(3, 85, 167);
+    margin: 50px 100px;
+    padding: 0 30px;
+}
+
+
+.card-search-breef-heading {
+    font-size: 50px;
+    padding: 40px 100px;
+}
+
+.card-search-breef-points{
+    display: flex;
+    align-items: start;
+    width: 80vw;
+    font-size: 18px;
+}
+
+.card-search-breef-content{
+    height: 9px;
+    width: 9px;
+    background: rgb(3, 85, 167);
+    margin-left: 100px;
+    margin-top: 13px;
+}
+
+.card-search-breef-content-points{
+    padding: 0px 20px;
+    line-height: 2.1rem;
+    margin-bottom: 25px;
+    font-family: "Roboto", serif;
+}
+
+
+
+
+
+/* RESEARCH CONTAINER IMAGE */

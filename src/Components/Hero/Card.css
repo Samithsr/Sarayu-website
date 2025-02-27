@@ -44,7 +44,7 @@
     opacity: 1;
   }
   .overlay_description > p:first-child{
-    margin-top: 130px;
+    margin-top: 135px;
   }
   .overlay_description_footer{
     width: 100%;
@@ -59,6 +59,7 @@
     color: white;
     font-size: 20px;
     display: flex;
+    padding: 10px 0;
   }
   @keyframes btnAn {
     from {
@@ -70,7 +71,7 @@
   }
   .content_header > p{
     margin: 0;
-    padding: 10px 25px;
+    padding: 10px 20px;
     
   }
   .content_header > p:first-child{
