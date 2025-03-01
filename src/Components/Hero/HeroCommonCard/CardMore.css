@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .card-research-report {
     display: flex;
@@ -18,17 +18,20 @@
 .card-research-header > p {
     font-size: 17px;
     margin-bottom: 3cap;
+    font-family: "Roboto", sans-serif;
 }
 
 .card-research-header > h1 {
     font-size: 61px;
     font-weight: 500;
     margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
 }
 
 .card-research-header > h4 {
     font-size: 25px;
     margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Date Section */
@@ -51,6 +54,7 @@
 .card-search-breef-heading {
     font-size: 50px;
     padding: 40px 100px;
+    font-family: "Roboto", sans-serif;
 }
 
 .card-search-breef-points {
@@ -72,6 +76,9 @@
     padding-left: 20px;
     line-height: 2.1rem;
     margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -96,11 +103,14 @@
     font-weight: 500;
     line-height: 2.1rem;
     margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
 }
 
 .research-header-line-container p {
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 17px;
+    line-height: 1.6rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
 }
 
 .research-active-line {
@@ -227,15 +237,76 @@
 
 
 /* horizantal view */
-.card-horizantal-view{
+.card-horizantal-view {
     display: flex;
-    align-items: start;
-    background-color: red;
-    height: 80%;
-    width: 100vw;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: flex-start;
+    width: 100vw; /* Full width on mobile */
+    height: auto; /* Height adjusts to content */
+    margin-top: 10px; /* Reduced margin for mobile */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    box-sizing: border-box;
 }
 
-.card-horizantal-heading{
-   
-    background-color: red;
- }
+.card-horizantal-heading {
+    padding: 20px; /* Reduced padding for mobile */
+    width: 100%;
+}
+
+.card-horizantal-heading > h1 {
+    font-size: 24px; /* Smaller font size for mobile */
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.8rem; /* Tighter line height */
+    margin-bottom: 15px; /* Reduced margin */
+    word-wrap: break-word; /* Prevent text overflow */
+}
+
+.card-horizantal-heading > p {
+    font-size: 14px; /* Smaller font size for mobile */
+    font-weight: 400; /* Lighter weight for readability */
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4rem; /* Adjusted for mobile */
+    word-wrap: break-word; /* Prevent text overflow */
+}
+
+.three-emerging-lines-heading {
+    height: 1px;
+    width: calc(100% - 40px); /* Full width minus margins */
+    border: 1px solid rgb(3, 85, 167); /* Slightly thinner border */
+    margin: 0 20px; /* Reduced margin for mobile */
+    margin-bottom: 15px; /* Adjusted spacing */
+}
+
+/* Media Queries for larger screens (Desktop) */
+@media (min-width: 768px) {
+    .card-horizantal-view {
+        flex-direction: row; /* Horizontal layout for desktop */
+        height: 55vh;
+        width: 60vw;
+        margin-top: 20px;
+    }
+
+    .card-horizantal-heading {
+        padding: 70px 100px;
+    }
+
+    .card-horizantal-heading > h1 {
+        font-size: 40px;
+        line-height: 3.1rem;
+        margin-bottom: 40px;
+    }
+
+    .card-horizantal-heading > p {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.7rem;
+    }
+
+    .three-emerging-lines-heading {
+        width: auto; /* Reset width for desktop */
+        border: 1.1px solid rgb(3, 85, 167);
+        margin: 0 100px;
+        margin-bottom: 20px;
+    }
+}

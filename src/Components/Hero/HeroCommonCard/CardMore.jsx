@@ -3,8 +3,11 @@ import "./CardMore.css";
 
 import searchgif from "../HeroCardImages/searchgif.gif";
 import newsearch from "../HeroCardImages/newsearch.webm";
+import { useParams } from 'react-router-dom';
+
 
 const CardMore = () => {
+  const { title } = useParams();
   const videoRef = useRef(null);
   return (
     <div className="card-research-report">
@@ -100,13 +103,14 @@ const CardMore = () => {
 
                 
             {/* horizantal view */}
-      <div card-horizantal-view>
+      <div className='card-horizantal-view'>
         <div className="card-horizantal-heading">
-            <h1>3 Emerging Trends of AI, autonomy and trust:</h1>
+            <h1>3 Emerging Trends of IIOt, autonomy and trust:</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum adipisci ab sapiente. Commodi eius cum cumque earum non suscipit. Ex blanditiis quod quas veniam itaque doloribus voluptatibus aperiam, enim maxime.</p>
         </div>
-
       </div>
+      <div className="three-emerging-lines-heading"> </div>
+
     </div>
   );
 };
