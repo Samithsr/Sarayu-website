@@ -39,7 +39,7 @@
     display: flex;
     font-family: monospace;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 /* Divider */
@@ -60,7 +60,6 @@
 .card-search-breef-points {
     display: flex;
     align-items: flex-start;
-    max-width: 80vw;
     font-size: 18px;
     padding: 0 100px;
 }
@@ -73,7 +72,7 @@
 }
 
 .card-search-breef-content-points {
-    padding-left: 20px;
+    /* padding-left: 20px; */
     line-height: 2.1rem;
     margin-bottom: 25px;
     font-weight: 500;
@@ -187,19 +186,11 @@
     .card-research-header > h1 {
         margin: 0;
     }
-    .card-search-date{
-        margin-left: 30px;
-    }
+    
 
     .card-search-breef-heading {
         padding: 30px 40px;
         font-size: 40px;
-    }
-
-    .card-search-breef-points {
-        padding: 0px;
-        margin: 0;
-        width: 150vw;
     }
 
    
@@ -224,6 +215,7 @@
         line-height: 1.6rem;
     }
 
+
     .three-emerging-lines-heading{
         width: 100vw;
         margin: 0;
@@ -242,27 +234,23 @@
     }
 
     .card-search-breef-points {
+        width: 100%;
         flex-direction: column;
         padding: 10px 20px;
     }
 
-    .card-search-breef-content-points {
-        /* margin-left: 0; */
-        width: 100vw;
-        /* margin: 0; */
-    }
 
     @media (max-width: 1024px) {
         .card-search-more-line {
-            width: calc(100% - 80px);
-            margin: 40px 40px; 
+            width: calc(100% - 70px);
+            margin: 20px 20px !important; 
         }
         
     }
     
     @media (max-width: 768px) {
         .card-search-more-line {
-            width: 80%; 
+            width: 90%; 
             margin: 30px auto;
         }
     }
@@ -327,3 +315,11 @@
         margin-bottom: 20px;
     }
 } 
+
+.inbeerf-section{
+    /* background-color: red; */
+}
+.card-search-breef-points{
+    /* background: blue; */
+    /* padding: 0 0px; */
+}

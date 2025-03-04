@@ -25,6 +25,7 @@ const Perspective = () => {
       <div className="card-search-more-line"></div>
 
       {/* Brief Section */}
+      <div className='inbeerf-section'>
       <div className="card-search-breef-heading">In brief</div>
 
       {/* Brief Points */}
@@ -53,6 +54,7 @@ const Perspective = () => {
           impedit illo eos ipsa inventore perferendis voluptas quo repellat in
           tempora?
         </p>
+      </div>
       </div>
 
       {/* REAEARCH IMAGE CONTAINER */}

@@ -7,14 +7,15 @@
   padding: 20px;
   max-width: 1500px;
   margin: auto;
-  background: white;
+  background: black;
+  color: white;
 }
 
 .service-item {
   display: flex;
   align-items: center;
   gap: 15px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   padding-bottom: 20px;
   width: 100%;
 }
@@ -25,7 +26,8 @@
   border-radius: 8px;
   object-fit: cover;
   cursor: pointer;
-  filter: drop-shadow(0px 4px 4px black);
+  /* filter: drop-shadow(0px 4px 4px rgb(182, 179, 179)); */
+  box-shadow: rgba(249, 244, 244, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .service-img:hover{
   animation: bounceImg 1.5s infinite 0s forwards normal running;
