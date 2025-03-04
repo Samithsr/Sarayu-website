@@ -68,15 +68,17 @@
     height: 9px;
     width: 9px;
     background: rgb(3, 85, 167);
-    margin-top: 13px;
+    /* margin-top: 12px; */
+    margin: 12px 8px;
 }
 
 .card-search-breef-content-points {
     /* padding-left: 20px; */
-    line-height: 2.1rem;
+    line-height: 1.9rem;
     margin-bottom: 25px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 19px;
+    width: 100%;
     font-family: "Roboto", sans-serif;
 }
 
@@ -180,7 +182,7 @@
     }
 
     .card-research-header > h4 {
-        margin: 0;
+        margin: 10px;
         font-size: 18px;
     }
     .card-research-header > h1 {
@@ -319,7 +321,7 @@
 .inbeerf-section{
     /* background-color: red; */
 }
-.card-search-breef-points{
+.card-search-breef-content{
     /* background: blue; */
     /* padding: 0 0px; */
 }

@@ -31,7 +31,7 @@ const Perspective = () => {
       {/* Brief Points */}
       <div className="card-search-breef-points">
         <div className="card-search-breef-content"></div>
-        <p className="card-search-breef-content-points">
+        <p className="card-search-breef-content-points">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, impedit.
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
           impedit illo eos ipsa inventore perferendis voluptas quo repellat in
           tempora?
@@ -40,7 +40,7 @@ const Perspective = () => {
 
       <div className="card-search-breef-points">
         <div className="card-search-breef-content"></div>
-        <p className="card-search-breef-content-points">
+        <p className="card-search-breef-content-points">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, impedit.
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
           impedit illo eos ipsa inventore perferendis voluptas quo repellat in
           tempora?
@@ -49,7 +49,7 @@ const Perspective = () => {
 
       <div className="card-search-breef-points">
         <div className="card-search-breef-content"></div>
-        <p className="card-search-breef-content-points">
+        <p className="card-search-breef-content-points">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, impedit.
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
           impedit illo eos ipsa inventore perferendis voluptas quo repellat in
           tempora?

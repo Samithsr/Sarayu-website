@@ -17,7 +17,7 @@
     width: 100%;
     padding: 0;
     /* background: linear-gradient(to bottom,black,rgb(0, 0, 0)); */
-    border-bottom: 3px solid rgba(128, 128, 128, 0.185);
+    /* border-bottom: 3px solid rgba(128, 128, 128, 0.185); */
     position: relative;
   }
   .navbar_shadow_overlay{
