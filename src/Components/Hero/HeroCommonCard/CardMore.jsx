@@ -17,6 +17,10 @@ const CardMore = () => {
   if(title.split(" ").join("") === "CASESTUDY"){
     return <CaseStudy />
   }
+
+  // if(title === "SEARCHREPORT") {
+  //   return <SearchReport  />
+  // }
   // if(title === "SEARCH REPORT"){
   //   return <SearchReport />
   // }

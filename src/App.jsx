@@ -12,6 +12,7 @@ import Products from './Components/Navbar/Products';
 import ChatBot from "react-chatbotify";
 import Application from './Components/Applications/Application';
 import CardMore from './Components/Hero/HeroCommonCard/CardMore';
+import OurClients from './Components/Navbar/OurClients';
 
 
 const App = () => {
@@ -42,6 +43,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/products" element={<Products />} />
+        <Route path='/clients' element={<OurClients />} />
+
         <Route path="/applications" element={<Application />} />
         <Route path="/cardmore/:title" element={<CardMore />} />
        </Routes>
