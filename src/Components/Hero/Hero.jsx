@@ -18,8 +18,14 @@ import smartsen from "../Hero/HeroMainPageimages/smartsensor.jpg"
 
 import Card from './Card';
 import CompanyDetail from './CompanyDetail';
+import { useNavigate } from 'react-router-dom';
+
 
 const Hero = (img) => {
+  const navigate = useNavigate()
+  const handlesubmit = () => {
+    navigate("/HeroServices")
+  }
   const [count,setCount] = useState(3)
   const carouselData = [
     {
@@ -117,6 +123,9 @@ const Hero = (img) => {
           <div data-aos="fade-up">
           {item.description}
           </div>
+          <div data-aos="fade-up" className='home_hero_section_readmore_btn'>
+            <button onClick={handlesubmit}> Read more...</button>
+          </div>
           </div> 
       </div>
     </div>
@@ -148,7 +157,7 @@ const Hero = (img) => {
    {/* mission vision card */}
     <div className="mission-vision-container">
       {/* Mission Card */}
-      <div data-aos="flip-left" className="card">
+      <div data-aos="flip-left" className="our-mission-card">
         <GiArcheryTarget className="icon" /> {/* Mission Icon */}
         <h2>MISSION</h2>
         <div className="card_divider"></div>
@@ -158,7 +167,7 @@ const Hero = (img) => {
       </div>
 
       {/* Vision Card */}
-      <div data-aos="flip-right" className="card">
+      <div data-aos="flip-right" className="our-mission-card">
         < MdVisibility className="icon" /> {/* Vision Icon */}
         <h2>VISION</h2>
         <div className="card_divider"></div>

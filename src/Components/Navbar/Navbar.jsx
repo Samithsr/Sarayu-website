@@ -55,7 +55,7 @@ const Navbar = () => {
                         PRODUCTS
                       </NavLink>
                     </li>
-                    <li className="navbar-item dropdown">
+                    {/* <li className="navbar-item dropdown">
                       <NavLink
                         className="navbar-link dropdown-toggle"
                         to="/catalogues"
@@ -63,7 +63,7 @@ const Navbar = () => {
                       >
                         CATALOGUES
                       </NavLink>
-                    </li>
+                    </li> */}
                     <li className="navbar-item dropdown">
                       <NavLink
                         className="navbar-link dropdown-toggle"
@@ -78,6 +78,31 @@ const Navbar = () => {
                         CONTACT US
                       </NavLink>
                     </li>
+
+
+
+                    <li className="navbar-item">
+                    <div
+              className="navbar-apply-container"
+              onMouseEnter={() => setIsDropdownVisible(true)}
+              onMouseLeave={() => setIsDropdownVisible(false)}
+            >
+                      <NavLink className="navbar-apply-button" to="/application">
+                        APPLICATION
+                      </NavLink>
+                      {isDropdownVisible && (
+                <ul className="application-dropdown">
+                  <li onClick={()=>listOneClick()}>Industries / Applications Steam Turbines</li>
+                  <li onCanPlay={()=>listTwoClick()}>Industries / Portable Vibration Analyzer</li>
+                </ul>
+                 )}
+
+
+
+                 
+            </div>
+
+                    </li>
                   </ul>
                 </div>
               </nav>
@@ -85,7 +110,7 @@ const Navbar = () => {
           </div>
           <div className="navbar-secondary-menu">
             <div className="navbar-links-group">
-              <NavLink to="/campus" className="navbar-secondary-link">
+              {/* <NavLink to="/campus" className="navbar-secondary-link">
                 INTRENSHIP
               </NavLink>
               <NavLink to="/scholarships" className="navbar-secondary-link">
@@ -99,9 +124,9 @@ const Navbar = () => {
               </NavLink>
               <NavLink to="/sports" className="navbar-secondary-link">
                 ACHIEVEMENTS
-              </NavLink>
+              </NavLink> */}
             </div>
-            <div
+            {/* <div
               className="navbar-apply-container"
               onMouseEnter={() => setIsDropdownVisible(true)}
               onMouseLeave={() => setIsDropdownVisible(false)}
@@ -116,7 +141,10 @@ const Navbar = () => {
                   <li onCanPlay={()=>listTwoClick()}>Industries / Portable Vibration Analyzer</li>
                 </ul>
               )}
-            </div>
+            </div> */}
+
+
+
           </div>
         </div>
 

@@ -13,6 +13,7 @@ import ChatBot from "react-chatbotify";
 import Application from './Components/Applications/Application';
 import CardMore from './Components/Hero/HeroCommonCard/CardMore';
 import OurClients from './Components/Navbar/OurClients';
+import HeroServices from './Components/Hero/HeroServices';
 
 
 const App = () => {
@@ -47,6 +48,7 @@ const App = () => {
 
         <Route path="/applications" element={<Application />} />
         <Route path="/cardmore/:title" element={<CardMore />} />
+        <Route path="/HeroServices" element={<HeroServices />} />
        </Routes>
 
        {/* Chatbot with predefined responses */}

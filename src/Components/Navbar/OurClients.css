@@ -35,7 +35,7 @@
     font-size: 3rem; /* Use relative units for font size */
     font-weight: 600;
     color: white;
-    margin-bottom: 20px; /* Add margin for spacing */
+    /* margin-bottom: 20px; */
 }
 
 .Ourclients-container_box > p {
@@ -48,9 +48,9 @@
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
-    background: rgb(16, 14, 14);
+    background: rgb(0, 0, 0);
     color: white;
-    padding: 20px 0; 
+    padding: 20px 70px; 
 }
 
 .ourclients-company-details > h2 {
@@ -75,18 +75,19 @@
     height: 300px;
     position: relative;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.555);
     overflow: hidden;
     margin: 30px 0;
   }
   
-  .card {
+  .weserve-card {
     width: 100%;
     height: 100%;
     border-radius: inherit;
+    background: white;
   }
   
-  .card .front-content {
+  .weserve-card .front-content {
     width: 100%;
     height: 100%;
     display: flex;
@@ -95,7 +96,7 @@
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
   }
   
-  .card .front-content p {
+  .weserve-card .front-content p {
     font-size: 22px;
     font-weight: 700;
     opacity: 1;
@@ -112,7 +113,7 @@
     font-family: "Roboto", sans-serif;
   }
   
-  .card .content {
+  .weserve-card .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -134,20 +135,20 @@
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
-  .card .content .heading {
+  .weserve-card .content .heading {
     font-size: 32px;
     font-weight: 700;
   }
   
-  .card:hover .content {
+  .weserve-card:hover .content {
     transform: translateY(0);
   }
   
-  .card:hover .front-content {
+  .weserve-card:hover .front-content {
     transform: translateY(-30%);
   }
   
-  .card:hover .front-content p {
+  .weserve-card:hover .front-content p {
     opacity: 0;
   }
 
@@ -156,4 +157,89 @@
     font-size: 25px;
     font-weight: bold;
     
+  }
+
+
+
+
+
+
+
+
+  /* From Uiverse.io by JAE2Dev */
+  
+  .ourclient-logo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    padding: 90px; 
+    /* max-width: 1300px;  */
+    margin: 0 auto; 
+    background: black; 
+  }
+  
+  .ourclient-card {
+    width: 100%; 
+    height: 180px;
+    padding: 0.9px;
+    border-radius: 0.7rem;
+    overflow: visible;
+    background: var(--background); 
+    position: relative;
+    z-index: 1;
+  }
+  
+  .ourclient-card::after {
+    position: absolute;
+    content: "";
+    top: -22px;
+    left: 0px;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.76);
+    filter: blur(34.5px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity 0.5s;
+  }
+  
+  .card-info {
+    --color: #1f1a1d;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: 0.rem;
+  }
+  
+  .card-info > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    /* border-radius: 0.7rem;  */
+    padding: 5px;
+  }
+  
+  .ourclient-card .title {
+    font-weight: light;
+    letter-spacing: 0.2em;
+  }
+  
+  /* Hover */
+  .ourclient-card:hover::after {
+    opacity: 0.6;
+    padding: 0.7rem 0;
+    top: 18px;
+    transition: 0.6s;
+  }
+  
+  .ourclient-card:hover .card-info {
+    color: #fff9f9;
+    transition: color 1s;
   }

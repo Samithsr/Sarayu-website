@@ -1,8 +1,8 @@
 .about-section {
   width: 100%;
   min-height: 180vh;
-  /* background-color: #ddd; */
-  background-color: rgb(14, 14, 14);
+  background-color: #ddd;
+  /* background-color: white; */
 }
 
 .about-container {
@@ -19,7 +19,6 @@
   width: 55%;
   padding: 20px;
   order: 1;
-  color: white;
 }
 
 .aboutus-title {
@@ -28,7 +27,7 @@
   font-size: 35px;
   font-weight: bold;
   margin-left: 15%;
-  color: white;
+  color: black;
   font-family: 'Arial, sans-serif';
   color: '#333';
   font-style: 'italic';
@@ -56,7 +55,6 @@
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: white;
 }
 
 
@@ -125,7 +123,7 @@
 .footer {
   background-color: #222;
   color: white;
-  padding: 30px 20px;
+  padding: 30px 0px;
   text-align: center;
 }
 
@@ -211,4 +209,25 @@
 
 .gmap_iframe {
   height: 300px !important; /* Adjust the height as needed */
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 680px) {
+  .aboutus-title{
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 30px;
+  }
+  .about-image-section {
+    margin: 0;
+    padding: 0;
+  }
+
 }
