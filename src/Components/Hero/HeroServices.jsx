@@ -3,8 +3,16 @@ import "./HeroServices.css";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const HeroServices = () => {
+
+    const navigate = useNavigate()
+    const applicationClick = () => {
+        navigate(-1)
+    }
+
+
     const [count, setCount] = useState(0);
     const imagesList = [
         "https://www.aireng.com.au/wp-content/uploads/piller-blowers-and-compressors-piller-one.jpg",
@@ -44,10 +52,11 @@ const HeroServices = () => {
                         Step into a sustainable future -- use our wide range of Vapour Fans
                         & Compressors
                     </h4>
-                    <p>
-                        HOME <MdOutlineArrowRightAlt /> SERVICE <MdOutlineArrowRightAlt />{" "}
-                        VAPOUR FANS & COMPRESSORS
+                    <p className="energy-recovery-home">
+                        <span className="home-link" onClick={applicationClick}>HOME</span>
+                        <MdOutlineArrowRightAlt /> SERVICE <MdOutlineArrowRightAlt /> VAPOUR FANS & COMPRESSORS
                     </p>
+
                 </div>
                 <div className="energy-recovery-image-right-container">
                     <img
