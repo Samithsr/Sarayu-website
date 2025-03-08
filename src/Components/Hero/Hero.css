@@ -331,3 +331,12 @@
         background: white;
         color: black;
     }
+
+    @media (width < 800px){
+        .main_banner_section_content_container{
+            height: 50vh;
+        }
+        .main_banner_section_content_container > div:first-child{
+            height: 50vh;
+        }
+    }

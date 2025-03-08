@@ -52,7 +52,7 @@ const App = () => {
        </Routes>
 
        {/* Chatbot with predefined responses */}
-       <ChatBot id={id} flow={flow} />
+       {/* <ChatBot id={id} flow={flow} /> */}
 
        <Footer />
     </div>

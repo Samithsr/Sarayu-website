@@ -108,3 +108,15 @@
   .main_card:hover{
     scale: 1.02;
   }
+
+
+
+
+
+  /* responsive design */
+  @media (width < 800px){
+    .main_Container{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }

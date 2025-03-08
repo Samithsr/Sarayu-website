@@ -65,16 +65,6 @@
 
 
 
-.home-link {
-    color: white; /* Default color */
-    cursor: pointer; /* Show pointer on hover */
-    transition: color 0.3s ease; /* Smooth transition */
-}
-
-.home-link:hover {
-    color: blue; /* Change color to blue on hover */
-}
-
 .energy-recovery-left-container h1 {
   margin-top: 30px;
   font-size: 40px;
