@@ -5,6 +5,7 @@
     flex-direction: column;
     background: black;
     color: white;
+    overflow-x: hidden;
     /* padding: 20px; */
 }
 
@@ -191,7 +192,7 @@
     
 
     .card-search-breef-heading {
-        padding: 30px 40px;
+        padding: 30px 20px !important;
         font-size: 40px;
     }
 

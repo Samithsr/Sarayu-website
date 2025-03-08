@@ -3,6 +3,7 @@
     height: 85vh;
     position: relative;
     background: black;
+    text-align: justify;
 }
 
 .Ourclients-container_image {
@@ -93,7 +94,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
   .weserve-card .front-content p {
@@ -104,13 +105,14 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
 
   .content > p {
     font-size: 18px;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
+    text-align: justify;
   }
   
   .weserve-card .content {
