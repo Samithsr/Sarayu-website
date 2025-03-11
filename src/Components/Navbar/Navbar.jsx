@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect, useState, useRef } from "react"; // Ensure useRef is imported
 import "./Navbar.css";
 import navbarlogo from "../../assets/Logo-removebg-preview.png";
 import { NavLink, useNavigate } from "react-router-dom";
@@ -8,6 +8,7 @@ const Navbar = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   const [navbarToggler, setNavbarToggler] = useState(false);
+  const [isProductsDropdownVisible, setIsProductsDropdownVisible] = useState(false);
 
 
   const navigate = useNavigate()
@@ -17,8 +18,35 @@ const Navbar = () => {
  const listTwoClick=()=>{
   navigate("/applications")
  }
+
+
+
+ 
+
+ const [navbarVisible, setNavbarVisible] = useState(true);
+ const lastScrollY = useRef(0);
+ 
+ useEffect(() => {
+   const handleScroll = () => {
+     if (window.scrollY > lastScrollY.current) {
+       setNavbarVisible(false); // Hide when scrolling down
+     } else {
+       setNavbarVisible(true); // Show when scrolling up
+     }
+     lastScrollY.current = window.scrollY;
+   };
+ 
+   window.addEventListener("scroll", handleScroll);
+   return () => window.removeEventListener("scroll", handleScroll);
+ }, []);
+ 
+
+
+
+ 
+
   return (
-    <header className="navbar-header">
+    <header className={`navbar-header ${navbarVisible ? "visible" : "hidden"}`}>
       <section className="navbar_shadow_overlay"></section>
       <div className="navbar-row">
         <div className="navbar-logo-container">
@@ -38,73 +66,74 @@ const Navbar = () => {
                 >
                   <span className="navbar-toggler-icon-custom"></span>
                 </button>
+
+
+                
                 <div className="navbar-collapse-custom">
-                  <ul className="navbar-nav-list">
-                    <li className="navbar-item">
-                      <NavLink className="navbar-link" to="/">
-                        HOME
-                      </NavLink>
-                    </li>
-                    <li className="navbar-item">
-                      <NavLink className="navbar-link" to="/aboutus">
-                        ABOUT US
-                      </NavLink>
-                    </li>
-                    <li className="navbar-item">
-                      <NavLink className="navbar-link" to="/products">
-                        PRODUCTS
-                      </NavLink>
-                    </li>
-                    {/* <li className="navbar-item dropdown">
-                      <NavLink
-                        className="navbar-link dropdown-toggle"
-                        to="/catalogues"
-                        role="button"
-                      >
-                        CATALOGUES
-                      </NavLink>
-                    </li> */}
-                    <li className="navbar-item dropdown">
-                      <NavLink
-                        className="navbar-link dropdown-toggle"
-                        to="/clients"
-                        role="button"
-                      >
-                        CLIENTS
-                      </NavLink>
-                    </li>
-                    <li className="navbar-item">
-                      <NavLink className="navbar-link" to="/contact">
-                        CONTACT US
-                      </NavLink>
-                    </li>
+      <ul className="navbar-nav-list">
+        <li className="navbar-item">
+          <NavLink className="navbar-link" to="/">
+            HOME
+          </NavLink>
+        </li>
+        <li className="navbar-item">
+          <NavLink className="navbar-link" to="/aboutus">
+            ABOUT US
+          </NavLink>
+        </li>
+        <li
+          className="navbar-item dropdown"
+          onMouseEnter={() => setIsProductsDropdownVisible(true)}
+          onMouseLeave={() => setIsProductsDropdownVisible(false)}
+        >
+          <NavLink className="navbar-link dropdown-toggle" to="/products">
+            PRODUCTS
+          </NavLink>
+          {isProductsDropdownVisible && (
+            <ul className="products-dropdown">
+              <li>Condition Monitoring System</li>
+              <li>Vibration and Temperature Monitoring System</li>
+              <li>Vibration Monitor VM8000</li>
+              <li>Vibration Monitor VM9620</li>
+              <li>Linear Proximity Sensor</li>
+              <li>Vibration Analyzer</li>
+              <li>Portable Vibration Analyzer / Dynamic Balancer</li>
+              <li>Power Monitor</li>
+              <li>Vibration Meter</li>
+              <li>Automated Spindle Test System</li>
+            </ul>
+          )}
+        </li>
+        <li className="navbar-item dropdown">
+          <NavLink className="navbar-link dropdown-toggle" to="/clients">
+            CLIENTS
+          </NavLink>
+        </li>
+        <li className="navbar-item">
+          <NavLink className="navbar-link" to="/contact">
+            CONTACT US
+          </NavLink>
+        </li>
+        {/* <li className="navbar-item">
+          <div
+            className="navbar-apply-container"
+            onMouseEnter={() => setIsDropdownVisible(true)}
+            onMouseLeave={() => setIsDropdownVisible(false)}
+          > */}
+            {/* <NavLink className="navbar-apply-button" to="/application">
+              APPLICATION
+            </NavLink>
+            {isDropdownVisible && (
+              <ul className="application-dropdown">
+                <li onClick={() => listOneClick()}>Industries / Applications Steam Turbines</li>
+                <li onClick={() => listTwoClick()}>Industries / Portable Vibration Analyzer</li>
+              </ul>
+            )} */}
+          {/* </div>
+        </li> */}
+      </ul>
+    </div>
 
-
-
-                    <li className="navbar-item">
-                    <div
-              className="navbar-apply-container"
-              onMouseEnter={() => setIsDropdownVisible(true)}
-              onMouseLeave={() => setIsDropdownVisible(false)}
-            >
-                      <NavLink className="navbar-apply-button" to="/application">
-                        APPLICATION
-                      </NavLink>
-                      {isDropdownVisible && (
-                <ul className="application-dropdown">
-                  <li onClick={()=>listOneClick()}>Industries / Applications Steam Turbines</li>
-                  <li onCanPlay={()=>listTwoClick()}>Industries / Portable Vibration Analyzer</li>
-                </ul>
-                 )}
-
-
-
-                 
-            </div>
-
-                    </li>
-                  </ul>
-                </div>
               </nav>
             </section>
           </div>

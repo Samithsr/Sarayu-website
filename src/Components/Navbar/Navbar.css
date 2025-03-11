@@ -16,11 +16,25 @@
   .navbar-header {
     width: 100%;
     padding: 0;
-    /* background: linear-gradient(to bottom,black,rgb(0, 0, 0)); */
-    /* border-bottom: 3px solid rgba(128, 128, 128, 0.185); */
-    position: relative;
-    /* overflow: hidden; */
-  }
+    position: fixed; /* Make it fixed */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+    background: radial-gradient(#e3e5e8, #cfd1d6); /* Keep navbar background */
+}
+
+
+.navbar-header {
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+.navbar-header.hidden {
+  transform: translateY(-100%);
+}
+
+
+
   .navbar_shadow_overlay{
     position: absolute;
     /* background: linear-gradient(to bottom,black,rgba(0, 0, 0, 0.008)); */
@@ -91,6 +105,32 @@
   .navbar-item {
     margin: 0 20px;
   }
+  
+
+
+
+  .products-dropdown {
+    position: absolute;
+    background: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .products-dropdown li {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .products-dropdown li:hover {
+    background: lightgray;
+    
+  }
+
+  
+
+
+
   
   .navbar-link {
     text-decoration: none;

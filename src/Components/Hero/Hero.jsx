@@ -111,42 +111,36 @@ const Hero = (img) => {
   },[count])
   return (
     <>
-    {carouselData.map((item , index)=>{
-      return(
-        count === item.id && <div key={item.id} className='main_banner_section'>
-        <img className='main_banner_section_image' src={item.img}  />
-      <div style={{color:"black"}} className='main_banner_section_content_container'>
-        <div style={{display:"flex",flexDirection:"column"}}>
-        <h2 data-aos="fade-down">
-          {item.title}
-          </h2>
-          <div data-aos="fade-up">
-          {item.description}
-          </div>
-          <div data-aos="fade-up" className='home_hero_section_readmore_btn'>
-            <button onClick={handlesubmit}> Read more...</button>
-          </div>
-          </div> 
-      </div>
-    </div>
-    
-  )
-})}
-   
-
-
-
-   {/* HERO CARD COMPONENET */}
-
-
-<div>
-  <Card />
-</div>
+        {carouselData.map((item, index) => {
+            return (
+                count === item.id && (
+                    <div key={item.id} className='main_banner_section'>
+                        <img className='main_banner_section_image' src={item.img} alt={item.title} />
+                        <div className='main_banner_section_content_container'>
+                            <div>
+                                <h2 data-aos="fade-down">{item.title}</h2>
+                                <div data-aos="fade-up">{item.description}</div>
+                                <div data-aos="fade-up" className='home_hero_section_readmore_btn'>
+                                    <button onClick={handlesubmit}>Read more...</button>
+                                </div>
+                            </div>
+                            <div>
+                                <img src={item.img} alt={item.title} data-aos="fade-left" />
+                            </div>
+                        </div>
+                    </div>
+                )
+            );
+        })}
 
       {/* hero company details */}
 <div>
   <CompanyDetail />
 </div>
+
+
+ 
+
 
 
 
@@ -185,6 +179,12 @@ const Hero = (img) => {
       <div className="core_divider"></div>
       <img src={CoreValue} alt="Core Values and Ethics" className="core-values-image" style={{ width: "90%", maxWidth: "1000px", height: "auto", borderRadius: "10px", }} />
     </div>
+
+
+      {/* HERO CARD COMPONENET */}
+<div>
+  <Card />
+</div>
     </>
   )
 }

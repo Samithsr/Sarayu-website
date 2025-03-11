@@ -87,6 +87,18 @@
   padding: 0 25px;
 }
 
+
+.home-link {
+  color: white; /* Default color */
+  cursor: pointer; /* Show pointer on hover */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.home-link:hover {
+  color: blue; /* Change color to blue on hover */
+}
+
+
 .energy-recovery-image-right-container {
   display: flex;
   justify-content: center;

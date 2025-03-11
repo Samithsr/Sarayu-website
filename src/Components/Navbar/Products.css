@@ -1,13 +1,293 @@
-.services-container {
+.arc-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000e2f;
+  color: white;
+  padding: 40px;
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: auto;
+}
+
+.arc-content {
+  flex: 1;
+  max-width: 50%;
+  padding: 0 100px;
+}
+
+.arc-content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.arc-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.arc-button {
+  background-color: #14ffe9;
+  color: #000e2f;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.arc-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.arc-image img {
+  max-width: 100%;
+  height: auto;
+  width:80% ;
+}
+
+
+
+
+
+
+
+.product-features-functions-container{
+  width: 100%;
+  background-color: #000e2f;
+  color: white;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+}
+
+.product-features-functions-header-container{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  /* background-color: red; */
+  width: 1000px;
+  padding: 35px 10px;
+  margin: 40px 0;
+  gap: 25px;
+}
+
+
+.product-features-functions-header-container > h1 {
+  font-size: 45px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.product-features-functions-header-container > h6 {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: justify;
+  text-indent: 20px;
+  padding: auto;
+}
+
+
+
+
+
+
+.siprotec-container {
+  width: 100%;
+  background-color: #000e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.product-info-container > h1 {
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 20px 0;
+}
+
+.siprotec-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  width: 80%;
+  /* background: red; */
+}
+
+.siprotec-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  max-width: 350px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+  /* margin-right: 30%; */
+}
+
+.siprotec-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 16px rgba(240, 241, 242, 0.3)) !important;
+}
+
+.siprotec-text {
+  flex: 1;
+  color: white;
+  text-align: left; /* Added to align text to the left */
+  display: flex; /* Added to control the flex properties */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align items to the left */
+}
+
+.siprotec-text h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.siprotec-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.siprotec-text p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+
+.product-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #0a0a1a;
+  padding-top: 40px;
+}
+
+.product-info-header {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.product-info-header p {
+  color: white;
+  padding: 12px 25px;
+  font-size: 22px;
+  position: relative;
+  border-radius: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.product-info-header p:hover::after,
+.product-info-header p.active::after {
+  background: rgb(8, 126, 190);
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -22px;
+}
+
+.underline-effect {
+  width: 80%;
+  height: 1px;
+  background-color: rgb(8, 126, 190);
+  margin-top: 10px;
+}
+
+.tab-content {
+  width: 80%;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: white;
+  text-align: justify;
+}
+
+.tab-description h2 {
+  color: rgb(8, 126, 190);
+  font-size: 25px;
+  margin: 25px 0;
+}
+
+.tab-description p {
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .services-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  width: 100%;
+  width: 100%; */
   /* max-width: 1500px; */
-  margin: auto;
+  /* margin: auto;
   background: black;
   color: white;
 }
@@ -26,9 +306,9 @@
   height: 150px;
   border-radius: 8px;
   object-fit: cover;
-  cursor: pointer;
+  cursor: pointer; */
   /* filter: drop-shadow(0px 4px 4px rgb(182, 179, 179)); */
-  box-shadow: rgba(249, 244, 244, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  /* box-shadow: rgba(249, 244, 244, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .service-img:hover{
   animation: bounceImg 1.5s infinite 0s forwards normal running;
@@ -79,7 +359,36 @@
     width: 100px;
     height: 100px;
   }
-}
+} */
+/* products code end here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

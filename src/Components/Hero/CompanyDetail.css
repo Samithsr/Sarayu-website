@@ -6,12 +6,12 @@
     font-weight: 500;
     margin: auto;
     font-family: "Arial", sans-serif;
-    color: white;
+    color: black;
     line-height: 1.8;
     padding: 40px;
     font-size: 18px;
     text-align: justify;
-    background:black;
+    background:white;
     /* background-image: url("https://media.istockphoto.com/id/1173740436/photo/modern-high-tech-authentic-robot-arm-holding-contemporary-super-computer-processor-industrial.jpg?s=2048x2048&w=is&k=20&c=SX-sZ0JlIMJXiqZ7q5DRV6MAvxa1kLXDNQlJeT3cSpc="); */
     /* background-image: url("https://images.pexels.com/photos/3855962/pexels-photo-3855962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
     /* background-image: url("https://images.pexels.com/photos/5462679/pexels-photo-5462679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
@@ -45,7 +45,7 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 10px;
-    color: white;
+    color: black;
 }
 
 .sarayu_divider {
@@ -59,14 +59,15 @@
 
 .company-content p {
     font-size: 16px;
+    /* max-width: 1300px; */
     margin-bottom: 15px;
-    color: white;
+    color: black;
     font-family: "Open Sans", serif;
     backdrop-filter: blur(3px); 
 }
 .sarayu-home-heading{
     font-size: 23px;
-    color: white !important;
+    color: black !important;
 }
 
 .company-content strong {
