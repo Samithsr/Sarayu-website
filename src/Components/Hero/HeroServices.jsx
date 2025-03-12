@@ -43,7 +43,7 @@ const HeroServices = () => {
 
 
     const [activeTab, setActiveTab] = useState("brief");
-    
+
     return (
         <>
             <section class="energy-recovery-section">
@@ -54,9 +54,9 @@ const HeroServices = () => {
                         & Compressors
                     </h4>
                     <p className="energy-recovery-home">
-    <span className="home-link" onClick={applicationClick}>HOME</span> 
-    <MdOutlineArrowRightAlt /> SERVICE <MdOutlineArrowRightAlt /> VAPOUR FANS & COMPRESSORS
-</p>
+                        <span className="home-link" onClick={applicationClick}>HOME</span>
+                        <MdOutlineArrowRightAlt /> SERVICE <MdOutlineArrowRightAlt /> VAPOUR FANS & COMPRESSORS
+                    </p>
 
 
                 </div>
@@ -296,8 +296,8 @@ const HeroServices = () => {
                         </div>
                     )}
                 </div>
-            </div> 
-                   </>
+            </div>
+        </>
     );
 };
 

@@ -22,20 +22,23 @@ const Navbar = () => {
 
 
  
-
  const [navbarVisible, setNavbarVisible] = useState(true);
  const lastScrollY = useRef(0);
- 
+
  useEffect(() => {
    const handleScroll = () => {
-     if (window.scrollY > lastScrollY.current) {
-       setNavbarVisible(false); // Hide when scrolling down
+     if (window.scrollY > 300) {
+       if (window.scrollY > lastScrollY.current) {
+         setNavbarVisible(false); // Hide when scrolling down past 200px
+       } else {
+         setNavbarVisible(true); // Show when scrolling up
+       }
      } else {
-       setNavbarVisible(true); // Show when scrolling up
+       setNavbarVisible(true); // Always show if less than 200px scrolled
      }
      lastScrollY.current = window.scrollY;
    };
- 
+
    window.addEventListener("scroll", handleScroll);
    return () => window.removeEventListener("scroll", handleScroll);
  }, []);

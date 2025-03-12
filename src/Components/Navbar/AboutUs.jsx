@@ -9,14 +9,37 @@ import tools from "../../assets/tools.jpg"
 import AboutUsContent from "../CommonAboutPage/CommonAbout";
 import { FaHome, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { NavLink } from "react-router-dom";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
+
 
 
 
 const AboutUs = () => {
   return (
+<>
+    <section className="main-about-section">
+    <div className=" main-about-content">
+      <h1>About Us</h1>
+      <h4>
+        Learn more about our journey, mission, and values.
+      </h4>
+      <p className="about-breadcrumb">
+        <span className="breadcrumb-home">HOME</span>
+        <MdOutlineArrowRightAlt /> COMPANY <MdOutlineArrowRightAlt /> ABOUT US
+      </p>
+    </div>
+    <div className="about-image-container">
+      <img
+        src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="About Us"
+      />
+    </div>
+    </section>
+  
+
     <div  className="about-section">
       <div className="about-title">
-        <h1 className='aboutus-title'>About Us</h1>
+        {/* <h1 className='aboutus-title'>About Us</h1> */}
       </div>
       <div className="about-container">
         
@@ -71,6 +94,8 @@ const AboutUs = () => {
 
 
     </div>
+    
+    </>
   );
 };
 

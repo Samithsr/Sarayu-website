@@ -32,7 +32,7 @@ const App = () => {
     AOS.init({
       duration: 1000,  // Animation duration in milliseconds
       easing: 'ease-in-out', // Easing type
-      once: false, // Whether animation should happen only once
+      once: true, // Whether animation should happen only once
     });
   }, []);
 

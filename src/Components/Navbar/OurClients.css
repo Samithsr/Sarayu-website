@@ -4,6 +4,7 @@
     position: relative;
     background: black;
     text-align: justify;
+    margin-top: 90px;
 }
 
 .Ourclients-container_image {
@@ -20,8 +21,8 @@
 
 .Ourclients-container_box {
     position: absolute;
-    top: 62%; /* Position the top of the box at 50% of the container */
-    left: 50%; /* Position the left of the box at 50% of the container */
+    top: 75%; /* Position the top of the box at 50% of the container */
+    left: 75%; /* Position the left of the box at 50% of the container */
     transform: translate(-50%, -50%); /* Center the box */
     width: 50%; /* Use percentage for width */
     max-width: 600px; /* Set a max-width to prevent it from becoming too large */
