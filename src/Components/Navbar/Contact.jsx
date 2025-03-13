@@ -35,23 +35,21 @@ const Contact = () => {
   return (
     <>
       <section className="contact-section">
-      <div className="contact-content">
-        <h1>Contact Us</h1>
-        <h4>
-          Have any query are requirement, we are just a mail away.
-        </h4>
-        <p className="contact-breadcrumb">
-          <span className="breadcrumb-home">HOME</span>
-          <MdOutlineArrowRightAlt /> SUPPORT <MdOutlineArrowRightAlt /> CONTACT US
-        </p>
-      </div>
-      <div className="contact-image-container">
-        <img
-          src="https://images.unsplash.com/photo-1538688423619-a81d3f23454b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Contact Us"
-        />
-      </div>
-    </section>
+  <div className="contact-content">
+    <h1>Contact Us</h1>
+    <h4>Have any query or requirement? We are just a mail away.</h4>
+    <p className="contact-breadcrumb">
+      <span className="breadcrumb-home">HOME</span>
+      <MdOutlineArrowRightAlt /> SUPPORT <MdOutlineArrowRightAlt /> CONTACT US
+    </p>
+  </div>
+  <div className="contact-image-container">
+    <img
+      src="https://images.unsplash.com/photo-1538688423619-a81d3f23454b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Contact Us"
+    />
+  </div>
+</section>
 
 
 

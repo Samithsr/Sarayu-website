@@ -53,9 +53,10 @@
   z-index: 1;
 }
 
+
 .energy-recovery-left-container {
   color: white;
-  padding: 50px 40px;
+  padding: 50px 20px;
   gap: 10px;
   display: flex;
   flex-direction: column;

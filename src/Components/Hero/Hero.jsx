@@ -16,6 +16,13 @@ import Recprocating from "../Hero/HeroMainPageimages/reprocating.jpg"
 import smartsen from "../Hero/HeroMainPageimages/smartsensor.jpg"
 
 
+
+
+import final from "../Hero/HeroCommonCard/HeroSectionProductImage/FINAL.jpg"
+import proximeter from "../Hero/HeroCommonCard/HeroSectionProductImage/20220620_141556.jpg"
+import vms from "../Hero/HeroCommonCard/HeroSectionProductImage/IMG_20220714_105927.jpg"
+import vms9620 from "../Hero/HeroCommonCard/HeroSectionProductImage/VM8000.jpg"
+
 import Card from './Card';
 import CompanyDetail from './CompanyDetail';
 import { useNavigate } from 'react-router-dom';
@@ -34,6 +41,7 @@ const Hero = (img) => {
       imgSize : "10%",
       // img : "https://media.licdn.com/dms/image/v2/D5612AQHPb2AAQOwaLQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1672073000577?e=2147483647&v=beta&t=YIP5CBqDh4lyFjaRhfoAedLwyM9fbfLH3xBvJYntBHs",
       img : Recprocating,
+      img2 : final, 
       description : "Vibration analyzer is a high performance, full-featured FFT data collector, signal analyzer and balancer which allow easy condition monitoring of equipment found in many industries such as power generation, petro-chemical, pulp and paper",
     },
     {
@@ -41,6 +49,7 @@ const Hero = (img) => {
       title : "Technical Illustration of a Hydroelectric Dam Turbine",
       imgSize : "40%",
       img : "https://thumbs.dreamstime.com/z/detailed-technical-sketch-showcases-engineering-design-hydroelectric-dam-turbine-highlighting-intricate-components-345087609.jpg?ct=jpeg=",
+      img2 : proximeter,
       description : "VMS-3000 series is a continuous online monitoring system suitable for condition monitoring and machinery protection applications and is designed to fully meet API 670 standards."
     },
     {
@@ -48,6 +57,7 @@ const Hero = (img) => {
       title : "Gas Turbine",
       // img : "https://img.freepik.com/premium-photo/gas-turbine-power-plant-with-gas-turbines-operation-highlighting-combustion-process_372999-25785.jpg",
       img : "https://cdn.sanity.io/images/0vv8moc6/turbomag/942a7fd82047eb952b64923e10292391b8200db7-6144x3930.jpg?fit=crop&auto=format",
+      img2 : vms,
       imgSize : "25%",
       description : "Vibration Temperature Monitoring System is a continuous online monitoring system suitable for condition monitoring and machinery protection applications."
     },
@@ -57,6 +67,7 @@ const Hero = (img) => {
       imgSize : "40%",
       // img : "https://plus.unsplash.com/premium_photo-1661963536116-543d5014d872?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=",
       img : "https://plus.unsplash.com/premium_photo-1661963536116-543d5014d872?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=",
+      img2 : vms9620,
       description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
     },
     {
@@ -64,6 +75,8 @@ const Hero = (img) => {
       title : "Pump Compressor Turbine",
       imgSize : "40%",
       img : pumpCompressor,
+      // img : Recprocating,
+      img2 : final, 
       // img : "https://www.technologyedge.biz/wp-content/uploads/2020/02/gas-turbine.jpg",
       description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
     },
@@ -72,6 +85,7 @@ const Hero = (img) => {
       title : "Advanced Spindle Automation System for Precision Manufacturing",
       imgSize : "40%",
       img: spintest,
+      img2 : proximeter,
       description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
     },
     {
@@ -79,6 +93,7 @@ const Hero = (img) => {
       title : "Cable Horness",
       imgSize : "40%",
       img: cable,
+      img2 : vms,
       description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
     },
     {
@@ -86,6 +101,7 @@ const Hero = (img) => {
       title : "Advancements in IIOT: Transforming Industry 4.0",
       imgSize : "40%",
       img: iiots,
+      img2 : vms9620,
       description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
     },
     {
@@ -93,6 +109,7 @@ const Hero = (img) => {
       title : "Advancements in IIOT: Transforming Industry 4.0",
       imgSize : "40%",
       img: smartsen,
+      img2 : final, 
       description : "The VS-800 is an eddy current type non-contact displacement/vibration transducer, used for measuring Shaft Vibration, Axial Position, Rotating Speed, and Phase Mark."
     },
   ]
@@ -125,7 +142,7 @@ const Hero = (img) => {
                                 </div>
                             </div>
                             <div>
-                                <img src={item.img} alt={item.title} data-aos="fade-left" />
+                                <img src={item.img2} alt={item.title} data-aos="fade-left" />
                             </div>
                         </div>
                     </div>

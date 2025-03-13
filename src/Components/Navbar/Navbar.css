@@ -20,8 +20,9 @@
     top: 0;
     left: 0;
     z-index: 1000; /* Ensure it stays above other content */
-    background: radial-gradient(#e3e5e8, #cfd1d6); /* Keep navbar background */
-}
+    /* background: radial-gradient(#e3e5e8, #cfd1d6);  */
+    background: white;
+  }
 
 
 .navbar-header {

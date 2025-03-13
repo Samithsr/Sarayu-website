@@ -196,21 +196,20 @@
 
 
 
-
-
-/* our mission vision card*/
+/* mission css code start here */
 .mission-vision-container {
     display: flex;
     justify-content: center;
     gap: 40px;
     padding: 40px;
-    background-color: black;
+    background-color: white;
     flex-wrap: wrap;
 }
 
 .our-mission-card {
-    width: 630px;
-    height: 320px;
+    width: 100%; /* Change from fixed 630px to 100% to adapt to container */
+    max-width: 630px; /* Maintain max-width for larger screens */
+    height: auto; /* Change from fixed 320px to auto to fit content */
     background: rgb(232, 229, 229);
     padding: 20px;
     color: black;
@@ -221,24 +220,20 @@
     cursor: pointer;
 }
 
-
 .our-mission-card:hover {
     transform: translateY(-5px);
 }
 
-
 .icon {
     font-size: 80px;
-    color: #ff4500; 
+    color: #ff4500;
 }
-
 
 .our-mission-card h2 {
     font-size: 22px;
     font-weight: bold;
     margin-top: 15px;
 }
-
 
 .card_divider {
     width: 300px;
@@ -248,14 +243,15 @@
     border-radius: 5px;
 }
 
-
 .our-mission-card p {
     font-size: 16px;
     font-family: "Open Sans", serif;
     font-weight: 500;
     color: black;
-    text-align: justify;
+    text-align: justify; /* This is fine, but we'll handle overflow */
     line-height: 1.5;
+    word-wrap: break-word; /* Ensure long words break to prevent overflow */
+    padding: 0 10px; /* Add padding to prevent text from touching edges */
 }
 
 
@@ -267,11 +263,19 @@
 /* core values */
 .home-container {
     text-align: center;
-    padding: 5px;
+    padding: 20px; /* Increased padding for better spacing */
     background-color: #f8f9fa;
-    background-image: url("https://media.istockphoto.com/id/2154963707/photo/artificial-intelligence-robot-control-futuristic-data-screen-ai-by-enter-command-prompt-for.jpg?s=2048x2048&w=is&k=20&c=lIa9gpsh9F8CxruEH8-yRUIC_0mOZF5ERy1SSEx_dW0=");
-    /* background-image: url("https://media.istockphoto.com/id/2137300670/photo/3d-robotic-render-automatic-monitering-data-cyber-security-auto-matic-protect-online.jpg?s=2048x2048&w=is&k=20&c=gLGZlyp-2rDh5E9fYUdBE1vDn7HhEHt-A39_uZL5FEY="); */
+    /* background-image: url("https://media.istockphoto.com/id/2154963707/photo/artificial-intelligence-robot-control-futuristic-data-screen-ai-by-enter-command-prompt-for.jpg?s=2048x2048&w=is&k=20&c=lIa9gpsh9F8CxruEH8-yRUIC_0mOZF5ERy1SSEx_dW0="); */
+    background-image: url("https://plus.unsplash.com/premium_photo-1683121713210-97667d2e83c8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=");
+
     background-attachment: fixed;
+    background-size: cover; /* Ensure background scales properly */
+    background-position: center; /* Center the background image */
+    min-height: 80vh; /* Changed to min-height to allow content to expand */
+    display: flex; /* Flexbox for better alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
 }
 
 .title {
@@ -279,22 +283,28 @@
     font-weight: bold;
     margin: 20px 0px;
     color: white;
-  }
-  
-  .core-values-image {
-      max-width: 100%;
-      height: auto;
-      /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
-      border-radius: 10px;
-    }
-    
-    .core_divider{
-        width: 300px;
-        height: 3px;
-        background: #007bff;
-        margin: 10px auto;
-        border-radius: 5px;
-    }
+}
+
+.core-values-image {
+    width: 90%; /* Keep width responsive */
+    min-width: 1300px; /* Cap the max width */
+    min-height: 100px; /* Maintain aspect ratio */
+    border-radius: 10px;
+    display: block; /* Ensure proper rendering */
+    object-fit: contain; /* Prevent stretching or cropping */
+    /* Remove min-width and min-height to avoid forced scaling */
+}
+
+.core_divider {
+    width: 300px;
+    height: 3px;
+    background: #007bff;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+
+
     
     .home_hero_section_readmore_btn{
         display: flex;
@@ -329,3 +339,67 @@
             height: 50vh;
         }
     }
+
+
+
+
+
+
+
+    /* mission card responsive view */
+    @media (max-width: 768px) {
+        .mission-vision-container {
+            padding: 20px; /* Reduce padding for smaller screens */
+            gap: 20px; /* Reduce gap between cards */
+        }
+    
+        .our-mission-card {
+            width: 100%; /* Full width on mobile */
+            max-width: 100%; /* Override max-width for smaller screens */
+            padding: 15px; /* Reduce padding slightly */
+        }
+    
+        .icon {
+            font-size: 60px; /* Reduce icon size for mobile */
+        }
+    
+        .our-mission-card h2 {
+            font-size: 20px; /* Slightly smaller heading */
+        }
+    
+        .card_divider {
+            width: 200px; /* Reduce divider width for mobile */
+        }
+    
+        .our-mission-card p {
+            font-size: 14px; /* Reduce font size for better fit */
+            padding: 0 5px; /* Adjust padding */
+        }
+    }
+
+
+
+
+
+    /* core values mobile responsive here */
+    /* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 10px; /* Reduce padding for mobile */
+        min-height: 40vh; /* Reduce height for smaller screens */
+    }
+
+    .title {
+        font-size: 24px; /* Smaller font size for mobile */
+        margin: 15px 0; /* Adjust margin */
+    }
+
+    .core-values-image {
+        min-width: 90%; /* Full width on mobile */
+        min-height: 100px; /* Maintain aspect ratio */
+    }
+
+    .core_divider {
+        width: 200px; /* Reduce divider width for mobile */
+    }
+}
