@@ -287,12 +287,16 @@
 
 .core-values-image {
     width: 90%; /* Keep width responsive */
-    min-width: 1300px; /* Cap the max width */
+    min-width: 1500px; /* Cap the max width */
     min-height: 100px; /* Maintain aspect ratio */
     border-radius: 10px;
     display: block; /* Ensure proper rendering */
     object-fit: contain; /* Prevent stretching or cropping */
+    /* background: red; */
+    backdrop-filter: blur(4px);
+    
     /* Remove min-width and min-height to avoid forced scaling */
+    
 }
 
 .core_divider {
@@ -301,6 +305,7 @@
     background: #007bff;
     margin: 10px auto;
     border-radius: 5px;
+
 }
 
 
@@ -395,7 +400,7 @@
     }
 
     .core-values-image {
-        min-width: 90%; /* Full width on mobile */
+        min-width: 100%; /* Full width on mobile */
         min-height: 100px; /* Maintain aspect ratio */
     }
 

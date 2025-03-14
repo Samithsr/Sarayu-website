@@ -153,7 +153,7 @@ const OurClients = () => {
         </div>
       </div> */}
       </div>
-      {/* <marquee className="client-image" behavior="" direction="right">Developed by==Sachin VS VS1</marquee> */}
+      <marquee className="client-image" behavior="" direction="right">Developed by==Samith R Gowda</marquee>
     </>
   );
 };

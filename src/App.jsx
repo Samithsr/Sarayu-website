@@ -14,6 +14,7 @@ import Application from './Components/Applications/Application';
 import CardMore from './Components/Hero/HeroCommonCard/CardMore';
 import OurClients from './Components/Navbar/OurClients';
 import HeroServices from './Components/Hero/HeroServices';
+import { useLocation } from 'react-router-dom';
 
 
 const App = () => {
@@ -36,6 +37,18 @@ const App = () => {
     });
   }, []);
 
+
+  
+
+
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, [pathname]);
+
+
   return (
     <div>
        <Navbar />
@@ -43,7 +56,7 @@ const App = () => {
         <Route path="/" element={<Hero /> } />
         <Route path="/contact" element={<Contact />} />
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/products/:title" element={<Products />} />
         <Route path='/clients' element={<OurClients />} />
 
         <Route path="/applications" element={<Application />} />

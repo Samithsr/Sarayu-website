@@ -126,6 +126,11 @@ const Hero = (img) => {
       clearInterval(interval)
     }
   },[count])
+
+
+
+
+  
   return (
     <>
         {carouselData.map((item, index) => {

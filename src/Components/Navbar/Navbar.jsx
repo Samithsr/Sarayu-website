@@ -44,6 +44,10 @@ const Navbar = () => {
  }, []);
  
 
+ const handlesubmit = (item) => {
+    navigate(`/products/${item}`)
+ }
+
 
 
  
@@ -89,21 +93,21 @@ const Navbar = () => {
           onMouseEnter={() => setIsProductsDropdownVisible(true)}
           onMouseLeave={() => setIsProductsDropdownVisible(false)}
         >
-          <NavLink className="navbar-link dropdown-toggle" to="/products">
+          <p className="navbar-link dropdown-toggle">
             PRODUCTS
-          </NavLink>
+          </p>
           {isProductsDropdownVisible && (
             <ul className="products-dropdown">
-              <li>Condition Monitoring System</li>
-              <li>Vibration and Temperature Monitoring System</li>
-              <li>Vibration Monitor VM8000</li>
-              <li>Vibration Monitor VM9620</li>
-              <li>Linear Proximity Sensor</li>
-              <li>Vibration Analyzer</li>
-              <li>Portable Vibration Analyzer / Dynamic Balancer</li>
-              <li>Power Monitor</li>
-              <li>Vibration Meter</li>
-              <li>Automated Spindle Test System</li>
+              <li onClick={() => handlesubmit("Condition Monitoring System")}>Condition Monitoring System</li>
+              <li onClick={() => handlesubmit("Vibration and Temperature Monitoring System")}>Vibration and Temperature Monitoring System</li>
+              <li onClick={() => handlesubmit("Vibration Monitor VM8000")}>Vibration Monitor VM8000</li>
+              <li onClick={() => handlesubmit("Vibration Monitor VM9620")}>Vibration Monitor VM9620</li>
+              <li onClick={() => handlesubmit("Linear Proximity Sensor")}>Linear Proximity Sensor</li>
+              <li onClick={() => handlesubmit("Vibration Analyzer")}>Vibration Analyzer</li>
+              <li onClick={() => handlesubmit("Portable Vibration Analyzer | Dynamic Balancer")}>Portable Vibration Analyzer / Dynamic Balancer</li>
+              <li onClick={() => handlesubmit("Power Monitor")}>Power Monitor</li>
+              <li onClick={() => handlesubmit("Vibration Meter")}>Vibration Meter</li>
+              <li onClick={() => handlesubmit("Automated Spindle Test System")}>Automated Spindle Test System</li>
             </ul>
           )}
         </li>
